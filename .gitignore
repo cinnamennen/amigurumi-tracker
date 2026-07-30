@@ -1,0 +1,28 @@
+# Pattern source material — never committed. PDFs/docs are the private raw
+# material this whole project is built on top of; only derived JSON/text
+# metadata belongs in this repo. See AGENTS.md / ARCHITECTURE.md.
+*.pdf
+*.docx
+*.xlsx
+.~lock.*
+~$*
+~*
+
+# OS/editor cruft
+.DS_Store
+*:Zone.Identifier
+*:com.apple.lastuseddate#PS
+
+# Node
+node_modules/
+dist/
+*.log
+
+# The raw pattern folder, wherever it ends up living during the reorg
+/source/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/

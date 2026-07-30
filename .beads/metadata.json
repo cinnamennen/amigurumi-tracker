@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "woobles",
+  "project_id": "a7318b6a-62d7-4300-b1be-2588695d046f"
+}
