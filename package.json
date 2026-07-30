@@ -5,7 +5,7 @@
   "description": "Personal collection tracker for crochet amigurumi patterns.",
   "packageManager": "pnpm@10.29.3",
   "scripts": {
-    "postinstall": "simple-git-hooks && bd hooks install",
+    "postinstall": "simple-git-hooks && (bd hooks install || true)",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test"
   },
