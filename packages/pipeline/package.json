@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:catalog": "tsx src/buildCatalog.ts"
   },
   "dependencies": {
     "@amigurumi/schema": "workspace:*"
   },
   "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
     "typescript": "^5.5.4",
     "vitest": "^2.1.9"
   }

@@ -9,6 +9,7 @@
 ~*
 
 # OS/editor cruft
+.playwright-mcp/
 .DS_Store
 *:Zone.Identifier
 *:com.apple.lastuseddate#PS
@@ -17,9 +18,13 @@
 node_modules/
 dist/
 *.log
+*.tsbuildinfo
 
 # The raw pattern folder, wherever it ends up living during the reorg
 /source/
+
+# Pipeline build artifact — regenerated via `pnpm --filter @amigurumi/pipeline run build:catalog`
+/packages/web/src/data/patterns.json
 
 # Beads / Dolt files (added by bd init)
 .dolt/
