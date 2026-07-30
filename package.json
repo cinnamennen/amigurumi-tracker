@@ -1,0 +1,19 @@
+{
+  "name": "amigurumi-tracker",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Personal collection tracker for crochet amigurumi patterns.",
+  "packageManager": "pnpm@10.29.3",
+  "scripts": {
+    "postinstall": "simple-git-hooks && bd hooks install",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test"
+  },
+  "devDependencies": {
+    "@beads/bd": "^1.1.2",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "node scripts/check-no-pattern-files.mjs || exit 1"
+  }
+}

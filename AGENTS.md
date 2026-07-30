@@ -1,79 +1,78 @@
-# AGENTS.md — Woobles Collection Project
+# AGENTS.md — Amigurumi Collection Tracker
 
-Context for whoever (human or agent) picks this project up next. This folder is Caleb's
-personal tracker + yarn-materials database for ~664 "The Woobles" crochet patterns (PDFs
-organized in subfolders below this file: Animals/, Christmas/, Collabs/, Food/, etc.).
+Context for whoever (human or agent) picks this project up next. This repo is Caleb's personal
+web app tracking his ~664 amigurumi crochet patterns (all from one source vendor currently):
+what he's made, what he can make, and what yarn he needs. It replaces an earlier Excel-based
+tracker (see "History" below).
 
-## What exists in this folder right now
+A naming note for future edits: keep the source vendor's actual name out of code, package
+names, identifiers, comments, and docs (including this file) wherever a generic term works —
+"the source vendor," "the original pattern vendor," etc. The one place the real name is
+unavoidable is literal data: the frozen fixture dataset, the gitignored `source/` folder, and
+string-matching logic that has to recognize literal text appearing in that data (e.g. a filter
+matching a note string that really does say "not from this vendor" in the source spreadsheet).
+An external URL that's a genuine technical requirement (e.g. the vendor's storefront domain, if
+a future integration needs to fetch from it) is the same kind of exception — it's a fact the
+code needs, not a name we chose.
 
-- **654 pattern PDFs**, in their original subfolder structure (untouched — this is source data).
-- **`Woobles List (extended).xlsx`** — the current/best spreadsheet deliverable. Four tabs:
-  Read Me, Sheet1 (original tracker + a "PDF File" key column + a live "Yarn Data?" status
-  column), Yarn Materials (one row per color per pattern), Shopping List (yardage needed per
-  color, summed across owned-but-not-completed patterns). Built with plain openpyxl-generated
-  formulas (SUMIFS/COUNTIFS/INDEX/MATCH) — no dynamic-array functions, no macros.
-- **`Woobles Yarn Materials.xlsx`**, **`Reconciliation Report.xlsx`** — earlier standalone
-  deliverables from before the tabs were merged into one workbook. Superseded by the
-  "extended" file above but left in place rather than deleted.
-- **`Woobles List (all images, take 2).xlsx`**, **`Woobles List (trimmed only).xlsx`**,
-  **`Woobles List .xlsx`** — earlier iterations of the tracker, kept for history. The
-  "(all images, take 2)" version is the one "extended.xlsx" was built on top of.
-- **`_pipeline/`** — the actual extraction/build pipeline, so this is reproducible rather
-  than a one-off. See below.
+**This repo now uses `bd` (beads) for issue tracking — see the managed block further down for
+commands.** The full implementation plan (architecture, phasing, rationale for every major
+decision) lives in `bd`'s epic `ami-fcq` (`bd show ami-fcq`); the plan doc it was built
+from is `/home/ion/.claude/plans/gentle-popping-hickey.md` on the machine it was authored on.
+Read the epic before doing more work here — it explains *why* the repo is shaped this way, not
+just what's in it.
 
-**As of the last working session, the direction is shifting away from the spreadsheet.**
-See "Where this was headed" at the bottom — that's the part most worth reading before
-doing more spreadsheet engineering.
-
-## `_pipeline/` contents
+## Repo layout
 
 ```
-_pipeline/scripts/
-  extract_core.py         shared geometric PDF-parsing engine (word bands -> materials rows)
-  extract_yarn5.py         direct pdfplumber extractor (final iteration, non-OCR path)
-  extract_ocr.py           OCR path: pdftoppm + tesseract, for scanned/image-only PDFs
-  extract_ocr_fallback.py  inline "With <color> yarn" extractor for the "book"-format PDFs
-                           that have no formal materials grid (Celebrate bundles etc.)
-  manual_overrides.py      hand-verified (color, weight, amount) tuples for ~57 files where
-                           automated extraction couldn't be trusted (glued OCR tokens,
-                           non-standard templates, third-party/non-Woobles files)
-  clean_colors.py          strips "with N stitch markers in it" phrasing out of color text
-  split_colors.py          splits genuine multi-color entries ("Red and Blue, 3 yds each")
-                           into separate rows. Deliberately does NOT split "X and Y" when
-                           only one combined number is given with no "each" — that pattern
-                           means a single compound-named colorway (e.g. "Dark Blue and Blue"
-                           is one yarn), not two colors. Caleb corrected this by hand once;
-                           don't reintroduce the old behavior.
-  color_text_fixes.py      small EXACT_FIXES dict + DROP_ROWS set for one-off text artifacts
-  final_merge_all.py       merges all of the above into data/flat_rows_final.json. Run this
-                           after touching manual_overrides.py, clean_colors.py, split_colors.py,
-                           or color_text_fixes.py — those files don't take effect until this
-                           script re-runs. (This bit me once: edited manual_overrides.py,
-                           forgot to re-run this, shipped stale data.)
-  build_xlsx_final.py      standalone Yarn Materials workbook builder (superseded by
-                           build_extended_tracker.py, kept for reference)
-  build_extended_tracker.py  builds "Woobles List (extended).xlsx" from
-                           Woobles List (all images, take 2).xlsx + data/flat_rows_final.json
-                           + data/crosswalk.json
-
-_pipeline/data/
-  flat_rows_final.json    canonical yarn dataset. 1938 rows, one per (pattern, color).
-                           Fields: folder, file, path, status, color, weight, amount_yds.
-                           `status` is one of: ok, verified_manual, ocr_ok, ocr_review,
-                           color_only_no_yardage. `file` is the PDF filename stem (no
-                           extension) — this is the join key everywhere.
-  crosswalk.json           664 records, one per row in Sheet1 of the tracker, linking
-                           tracker Name/Animal/Category/Have-It to a pdf_file (or null if
-                           genuinely unowned/no materials page exists). match_method tells
-                           you how confident that link is (exact/prefix/family_disambiguated/
-                           typo_fixed/confirmed_gap/correctly_unowned).
+source/                  gitignored, private raw material — pattern PDFs/docx, xlsx trackers.
+                          Never committed (see guardrails below). Not present on a fresh clone.
+packages/
+  schema/                 shared TS + Zod types (Pattern, MaterialRow, Stash, ...) — the one
+                           source of truth both the pipeline and the web app import.
+  pipeline/                Node/TS pipeline that builds packages/web/src/data/patterns.json.
+    src/colorRecords.ts     classifies raw color text into {family, qualifier, isPlaceholder}
+    src/__tests__/fixtures/frozenOutput.json   frozen snapshot of the original Python
+                             pipeline's already-correct output (664 tracker rows, 1938
+                             material rows, 664 crosswalk rows) — the regression baseline.
+                             The Python code that produced it is gone; this JSON is what's
+                             tested against now.
+  web/                     Vue 3 + Vite + TS static SPA. No backend — catalog data is a build
+                           artifact, user state (have-it/completed/notes/stash) lives in
+                           browser localStorage only.
 ```
 
-To regenerate everything from scratch: run the scripts in `_pipeline/scripts/` against the
-PDFs in this folder (paths inside the scripts assume the sandbox mount point used during
-development — update the SRC path at the top of each script for wherever this folder lives
-in the new environment), in this order: extract_yarn5.py -> extract_ocr.py ->
-extract_ocr_fallback.py -> final_merge_all.py -> build_extended_tracker.py.
+## Guardrails — read before touching git
+
+The PDFs/patterns themselves must **never** be committed (copyright — this repo ships derived
+metadata and a link back to the source vendor, not the patterns). Two layers enforce this:
+1. Root `.gitignore`: `*.pdf`, `*.docx`, `*.xlsx`, lock files.
+2. A pre-commit hook (`scripts/check-no-pattern-files.mjs`, wired via `simple-git-hooks`) that
+   hard-rejects any commit staging one of those extensions, even via `git add -f`. Verified live
+   against a real pattern PDF before any other repo work began — don't remove or weaken this.
+
+**Two sharp edges found the hard way here** (see `bd memories hooks` for the full note):
+`core.hooksPath` is `.beads/hooks`, not `.git/hooks` — bd set that up, so that's the file that
+actually matters. And the `simple-git-hooks` config for `pre-commit` must be
+`"node scripts/check-no-pattern-files.mjs || exit 1"`, not just the bare command — the compiled
+hook has no `set -e`, so without the explicit `|| exit 1` a failing guardrail script silently
+falls through to bd's appended hook chain and the commit succeeds anyway. `postinstall` must run
+`simple-git-hooks && bd hooks install` (both, in that order) or a plain reinstall silently drops
+bd's chain, since `simple-git-hooks` regenerates the file from scratch with no knowledge of it.
+This actually let a real PDF get committed once before it was caught by testing an end-to-end
+`git commit`, not just eyeballing the script — trust that test, not the code, when touching this.
+
+## History: the original Excel tracker
+
+Before this rewrite, the collection was tracked in an Excel workbook (Sheet1 + Yarn Materials +
+Shopping List tabs, built with openpyxl/plain formulas) fed by a Python extraction pipeline
+(`_pipeline/`, now deleted — its output is frozen in
+`packages/pipeline/src/__tests__/fixtures/frozenOutput.json`, see above). The move away from the
+spreadsheet was deliberate: Caleb's direction was **stop optimizing the Excel file** and build
+something that could actually represent match-confidence on color (a flat "Blue" string can't
+distinguish "any blue works" from "this needs to match exactly"), track a yarn stash, and support
+real browsing via tags. Details on *why* below are still accurate and worth reading; the *what
+to do about it* is now superseded by the beads epic mentioned above.
 
 ## Things learned the hard way (don't rediscover these)
 
@@ -89,7 +88,7 @@ that openpyxl-valid XML means LibreOffice-safe. It caught two real bugs this way
 amounts stored as text (silently zeroed every SUMIFS), and a PDF with a literal trailing
 space in its own filename ("Chococat .pdf") breaking an exact-match join key.
 
-**PDF structure.** Woobles pattern PDFs come in roughly three layout families: a modern
+**PDF structure.** The source vendor's pattern PDFs come in roughly three layout families: a modern
 icon-grid materials page, an older numbered-legend/diagram style, and a "Celebrate"
 book-bundle format with no formal materials grid at all (colors only mentioned inline as
 "With  yarn..." in the instructions). About 93 of the 654 PDFs are scanned/image-only and
@@ -100,8 +99,8 @@ generic tool icons (hook, eyes, needle, stuffing, scissors), identical across ev
 pattern regardless of what color yarn is listed. Color is text-only in the source data;
 there is no pixel/swatch signal to extract.
 
-**Woobles' actual yarn line** (researched, not verified against a live current chart — see
-below). They sell a proprietary yarn called "Easy Peasy Yarn" with a small set of named
+**The source vendor's actual yarn line** (researched, not verified against a live current chart —
+see below). They sell a proprietary yarn called "Easy Peasy Yarn" with a small set of named
 colorways (punny product names, each mapped to one plain color word — e.g. "Seas the Day"
 = Blue). As of the last confirmed snapshot there was exactly **one** official blue, not a
 light/dark split, though the line has evidently grown since (mentions of newer pastels and
@@ -112,8 +111,8 @@ reading text. This matters a lot for the color-ambiguity question below.
 **Color-text breakdown**, computed against the 1937 non-blank color entries in
 flat_rows_final.json:
 - 88% (1711) are bare generic family words ("Blue", "Black", "White"...) — probably *not*
-  actually ambiguous in practice, since Woobles' own commercial line typically has only one
-  option per family anyway.
+  actually ambiguous in practice, since the source vendor's own commercial line typically has
+  only one option per family anyway.
 - 8% (155) carry an explicit shade qualifier ("Dark Brown", "Light Blue", "Navy"...) — this
   is the real risk group. A designer who bothered to specify a shade is telling you it
   matters, likely for a licensed collab needing a character-accurate color outside the base
@@ -134,37 +133,15 @@ by reading the actual PDF title text. Final result: 654/654 PDFs matched to exac
 tracker row each, zero duplicates, 2 confirmed genuine gaps (no materials page exists for
 those patterns), 8 correctly-unowned (Have It? = FALSE, no PDF expected).
 
-## Where this was headed (read this before doing more spreadsheet work)
+## Where this was headed — status: in progress, tracked in beads
 
-Caleb's stated direction, most recently: **stop optimizing the Excel file** and instead
-solve the underlying problem properly — that tracking color as a flat text string (e.g.
-just "Blue") isn't useful for "can I make this with yarn I already have" questions, because
-two patterns both saying "Blue" might genuinely need different shades, or might not — the
-data as extracted doesn't distinguish those cases, and neither does a spreadsheet cell.
-
-The conclusion from the investigation above: don't try to solve this with cleverer text
-parsing — the ambiguity is a real gap in the source material, not an extraction bug. The
-proposed shape of a real fix:
-
-1. **Restructure color as a small record, not a string**: family (Blue/Green/etc.),
-   optional qualifier (only ~8% of entries have one — treat those as genuinely
-   shade-sensitive), and a `is_placeholder` flag for the "your choice" entries (~3.7%).
-2. **Three-tier match confidence** instead of true/false: family-only match ("safe, no
-   shade specified"), qualifier match required ("verify visually"), placeholder ("no
-   constraint"). A spreadsheet cell can't represent this well; this wants real code.
-3. **Ground the base palette**: fetch Woobles' *current* official Easy Peasy Yarn color
-   chart (not done yet — the research above is a stale/partial snapshot) to check how much
-   of the 8% qualified group actually resolves against real SKUs vs. is genuinely
-   collab-specific custom shading.
-4. **Use the cover photo as a visual reference**: each pattern PDF's first content page has
-   a photo of the finished piece in its real colors (this does exist, unlike materials-page
-   swatches) — nobody's using this yet. Not pixel-precise, but a real reference a human (or
-   Claude) could compare against instead of trusting a text label alone.
-5. **Open question, not yet decided**: what the actual tool/interface becomes. Caleb's
-   instinct was that this no longer belongs in a spreadsheet — something interactive, or at
-   minimum a properly structured dataset with real matching logic, is the likely direction.
-   Nothing has been built for this yet; the color-record restructuring above and the
-   current-chart lookup are the natural next steps whenever this picks back up.
+The analysis above (item 1, the family/qualifier/placeholder color record; item 2, three-tier
+match confidence) is what `packages/pipeline/src/colorRecords.ts` implements — see `bd show
+ami-fcq.7`. Items 3 (grounding the base palette against the source vendor's *current* official
+color chart) and 4 (using the PDF cover photo as a visual reference) are **not done** — they were never
+turned into beads issues, so if this picks back up, that's real remaining scope worth filing,
+not just implied by old notes. Item 5's open question is answered: a static Vue SPA, no backend,
+localStorage for user state (see `bd show ami-fcq` for the full architecture and why).
 
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:6cd5cc61 -->
 ## Beads Issue Tracker

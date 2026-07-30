@@ -1,0 +1,8 @@
+packages:
+  - packages/*
+
+onlyBuiltDependencies:
+  - "@beads/bd"
+  - simple-git-hooks
+  - esbuild
+
