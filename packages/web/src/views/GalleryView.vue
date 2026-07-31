@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Pattern } from "@amigurumi/schema";
+import type { Pattern, SewingAmount, SkillLevel } from "@amigurumi/schema";
 import { computed, ref } from "vue";
 
 import patternsJson from "../data/patterns.json";
@@ -8,15 +8,77 @@ import { useUserStateStore } from "../stores/userState";
 const patterns = patternsJson as Pattern[];
 const userState = useUserStateStore();
 
+const categories = [...new Set(patterns.map((p) => p.category))].sort();
+const skillLevels = [...new Set(patterns.map((p) => p.skillLevel))].sort() as SkillLevel[];
+const sewingAmounts = [...new Set(patterns.map((p) => p.sewingAmount))].sort() as SewingAmount[];
+
 const search = ref("");
+const category = ref("");
+const skillLevel = ref("");
+const sewingAmount = ref("");
+const haveItOnly = ref(false);
+const completedOnly = ref(false);
+
+function isHaveIt(p: Pattern): boolean {
+  return userState.patternState(p.id).haveIt || p.haveIt;
+}
+
+function isCompleted(p: Pattern): boolean {
+  return userState.patternState(p.id).completed || p.completed;
+}
+
 const filtered = computed(() =>
-  patterns.filter((p) => p.name.toLowerCase().includes(search.value.toLowerCase())),
+  patterns.filter((p) => {
+    if (search.value && !p.name.toLowerCase().includes(search.value.toLowerCase())) return false;
+    if (category.value && p.category !== category.value) return false;
+    if (skillLevel.value && p.skillLevel !== skillLevel.value) return false;
+    if (sewingAmount.value && p.sewingAmount !== sewingAmount.value) return false;
+    if (haveItOnly.value && !isHaveIt(p)) return false;
+    if (completedOnly.value && !isCompleted(p)) return false;
+    return true;
+  }),
 );
 </script>
 
 <template>
-  <h1>Gallery ({{ patterns.length }} patterns)</h1>
-  <input v-model="search" type="search" placeholder="Search patterns..." class="search" />
+  <h1>Gallery ({{ filtered.length }} / {{ patterns.length }} patterns)</h1>
+
+  <form class="filters" @submit.prevent>
+    <div class="field">
+      <label for="search">Search</label>
+      <input id="search" v-model="search" type="search" placeholder="Pattern name..." />
+    </div>
+    <div class="field">
+      <label for="category">Category</label>
+      <select id="category" v-model="category">
+        <option value="">All categories</option>
+        <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="skill">Skill level</label>
+      <select id="skill" v-model="skillLevel">
+        <option value="">All skill levels</option>
+        <option v-for="s in skillLevels" :key="s" :value="s">{{ s }}</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sewing">Sewing amount</label>
+      <select id="sewing" v-model="sewingAmount">
+        <option value="">Any sewing amount</option>
+        <option v-for="s in sewingAmounts" :key="s" :value="s">{{ s }}</option>
+      </select>
+    </div>
+    <div class="field checkbox">
+      <input id="have-it-only" v-model="haveItOnly" type="checkbox" />
+      <label for="have-it-only">Have it</label>
+    </div>
+    <div class="field checkbox">
+      <input id="completed-only" v-model="completedOnly" type="checkbox" />
+      <label for="completed-only">Made it</label>
+    </div>
+  </form>
+
   <div class="grid">
     <RouterLink
       v-for="pattern in filtered"
@@ -24,32 +86,70 @@ const filtered = computed(() =>
       :to="{ name: 'pattern-detail', params: { id: pattern.id } }"
       class="card"
     >
+      <div class="thumb" aria-hidden="true">
+        <img v-if="pattern.imageUrl" :src="pattern.imageUrl" :alt="pattern.name" />
+        <span v-else class="thumb-placeholder">{{ pattern.name.charAt(0) }}</span>
+      </div>
       <h3>{{ pattern.name }}</h3>
       <p class="meta">{{ pattern.category }}<span v-if="pattern.subcategory"> · {{ pattern.subcategory }}</span></p>
+      <p v-if="pattern.collectionTags.length" class="tags">
+        <span v-for="tag in pattern.collectionTags" :key="tag" class="tag">{{ tag }}</span>
+      </p>
       <p class="badges">
-        <span v-if="userState.patternState(pattern.id).haveIt || pattern.haveIt" class="badge">Have it</span>
-        <span v-if="userState.patternState(pattern.id).completed || pattern.completed" class="badge done"
-          >Made it</span
-        >
+        <span v-if="isHaveIt(pattern)" class="badge">Have it</span>
+        <span v-if="isCompleted(pattern)" class="badge done">Made it</span>
       </p>
     </RouterLink>
+    <p v-if="filtered.length === 0" class="empty">No patterns match the current filters.</p>
   </div>
 </template>
 
 <style scoped>
-  .search {
-    width: 100%;
-    max-width: 24rem;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 1rem;
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #fff;
     border: 1px solid #eadfd8;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .field.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .field label {
+    font-weight: 600;
+  }
+
+  .field input,
+  .field select {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #d8ccc3;
+    border-radius: 0.375rem;
+    font: inherit;
   }
 
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 1rem;
+  }
+
+  .empty {
+    color: #7a6d64;
   }
 
   .card {
@@ -62,6 +162,29 @@ const filtered = computed(() =>
     color: inherit;
   }
 
+  .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    margin-bottom: 0.5rem;
+    background: #f0e6e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumb-placeholder {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #c2618d;
+  }
+
   .card h3 {
     margin: 0 0 0.25rem;
   }
@@ -70,6 +193,21 @@ const filtered = computed(() =>
     margin: 0;
     color: #7a6d64;
     font-size: 0.875rem;
+  }
+
+  .tags {
+    margin: 0.375rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .tag {
+    font-size: 0.6875rem;
+    padding: 0.0625rem 0.375rem;
+    border-radius: 999px;
+    background: #f4efe9;
+    color: #7a6d64;
   }
 
   .badges {

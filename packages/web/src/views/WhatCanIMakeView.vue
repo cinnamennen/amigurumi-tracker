@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Pattern } from "@amigurumi/schema";
+import type { ColorFamily, MaterialRow, Pattern } from "@amigurumi/schema";
 import { computed } from "vue";
 
 import patternsJson from "../data/patterns.json";
@@ -8,25 +8,92 @@ import { useUserStateStore } from "../stores/userState";
 const patterns = patternsJson as Pattern[];
 const userState = useUserStateStore();
 
-// Simple per-material check against on-hand yardage — doesn't account for
-// yarn shared across multiple patterns you might make in the same sitting.
-function canMake(pattern: Pattern): boolean {
-  return pattern.materials.every((m) => {
-    if (m.isPlaceholder || m.amountYds === null) return true;
-    const onHand = userState.state.stash.onHandYdsByFamily[m.colorFamily] ?? 0;
-    return onHand >= m.amountYds;
-  });
+function isHaveIt(p: Pattern): boolean {
+  return userState.patternState(p.id).haveIt || p.haveIt;
 }
 
-const makeable = computed(() => patterns.filter((p) => !p.completed && canMake(p)));
+function isCompleted(p: Pattern): boolean {
+  return userState.patternState(p.id).completed || p.completed;
+}
+
+// Family-level yardage totals needed per pattern (summing multiple materials
+// in the same family), ignoring placeholder "your choice" materials.
+function neededByFamily(materials: MaterialRow[]): Partial<Record<ColorFamily, number>> {
+  const totals: Partial<Record<ColorFamily, number>> = {};
+  for (const m of materials) {
+    if (m.isPlaceholder || m.amountYds === null) continue;
+    totals[m.colorFamily] = (totals[m.colorFamily] ?? 0) + m.amountYds;
+  }
+  return totals;
+}
+
+function stashCovers(materials: MaterialRow[]): boolean {
+  const needed = neededByFamily(materials);
+  return Object.entries(needed).every(
+    ([family, yds]) => (userState.state.stash.onHandYdsByFamily[family as ColorFamily] ?? 0) >= yds,
+  );
+}
+
+// Qualifier-bearing materials ("Dark Brown") can't be confirmed against a
+// family-level stash total alone — flag them for a manual shade check
+// instead of silently treating the family match as good enough.
+function needsShadeVerification(materials: MaterialRow[]): boolean {
+  return materials.some((m) => !m.isPlaceholder && m.qualifier);
+}
+
+interface Makeable {
+  pattern: Pattern;
+  verifyShade: boolean;
+}
+
+const makeable = computed<Makeable[]>(() =>
+  patterns
+    .filter((p) => isHaveIt(p) && !isCompleted(p) && stashCovers(p.materials))
+    .map((p) => ({ pattern: p, verifyShade: needsShadeVerification(p.materials) })),
+);
 </script>
 
 <template>
   <h1>What Can I Make ({{ makeable.length }})</h1>
-  <p>Patterns not yet completed whose materials fit your current stash.</p>
-  <ul>
-    <li v-for="pattern in makeable" :key="pattern.id">
+  <p>Patterns you have and haven't made yet, whose materials fit your current stash.</p>
+  <ul class="list">
+    <li v-for="{ pattern, verifyShade } in makeable" :key="pattern.id">
       <RouterLink :to="{ name: 'pattern-detail', params: { id: pattern.id } }">{{ pattern.name }}</RouterLink>
+      <span v-if="verifyShade" class="badge verify" title="One or more materials specify a shade (e.g. 'Dark Brown') — check it matches your stash.">
+        verify shade
+      </span>
+    </li>
+    <li v-if="makeable.length === 0" class="empty">
+      Nothing yet — mark patterns as "have it" and enter your stash yardage.
     </li>
   </ul>
 </template>
+
+<style scoped>
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .list li {
+    padding: 0.375rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.0625rem 0.5rem;
+    border-radius: 999px;
+  }
+
+  .badge.verify {
+    background: #f6e3ee;
+    color: #a34878;
+  }
+
+  .empty {
+    color: #7a6d64;
+  }
+</style>
