@@ -18,5 +18,10 @@ export const router = createRouter({
       name: "what-can-i-make",
       component: () => import("../views/WhatCanIMakeView.vue"),
     },
+    {
+      path: "/shopping-list",
+      name: "shopping-list",
+      component: () => import("../views/ShoppingListView.vue"),
+    },
   ],
 });

@@ -5,6 +5,7 @@
     <RouterLink to="/">Gallery</RouterLink>
     <RouterLink to="/stash">Stash</RouterLink>
     <RouterLink to="/what-can-i-make">What Can I Make</RouterLink>
+    <RouterLink to="/shopping-list">Shopping List</RouterLink>
   </nav>
   <main>
     <RouterView />
