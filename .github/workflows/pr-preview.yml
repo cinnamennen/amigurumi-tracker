@@ -1,0 +1,69 @@
+name: Deploy PR preview
+
+# Builds each PR to https://cinnamennen.github.io/amigurumi-tracker/pr-preview/<n>/
+# as a subfolder on the gh-pages branch, alongside the production build
+# (see deploy.yml). rossjrw/pr-preview-action manages that subfolder
+# lifecycle (deploy on open/sync, remove on close) and comments the PR with
+# the preview link.
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to (re)deploy a preview for"
+        required: true
+
+concurrency: preview-${{ github.event.pull_request.number || inputs.pr_number }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve PR ref (workflow_dispatch only)
+        if: github.event_name == 'workflow_dispatch'
+        id: pr
+        run: |
+          ref=$(gh pr view "${{ inputs.pr_number }}" --json headRefName -q .headRefName)
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/checkout@v4
+        if: github.event.action != 'closed'
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && steps.pr.outputs.ref || github.head_ref }}
+
+      - uses: pnpm/action-setup@v4
+        if: github.event.action != 'closed'
+        with:
+          version: 10.29.3
+
+      - uses: actions/setup-node@v4
+        if: github.event.action != 'closed'
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+        if: github.event.action != 'closed'
+
+      - run: pnpm --filter @amigurumi/pipeline run build:catalog
+        if: github.event.action != 'closed'
+
+      - name: Build with PR preview base path
+        if: github.event.action != 'closed'
+        run: >
+          pnpm --filter @amigurumi/web exec vite build
+          --base=/amigurumi-tracker/pr-preview/${{ github.event.pull_request.number || inputs.pr_number }}/
+
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: packages/web/dist
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          pr-number: ${{ github.event.pull_request.number || inputs.pr_number }}

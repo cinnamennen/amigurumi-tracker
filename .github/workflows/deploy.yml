@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 # Gated on CI actually passing, not just running after it by coincidence:
 # this only fires once the CI workflow_run completes, and the job-level `if`
 # below still checks its conclusion before doing anything.
+#
+# Publishes to the gh-pages branch (Pages source = branch, not the Actions
+# artifact) so PR previews (pr-preview.yml) can coexist as subfolders on the
+# same branch/site instead of each deploy wiping the other's content.
 on:
   workflow_run:
     workflows: [CI]
@@ -11,13 +15,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -45,18 +47,15 @@ jobs:
 
       - run: pnpm --filter @amigurumi/web run build
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: packages/web/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: packages/web/dist
+          publish_branch: gh-pages
+          # Merge into the branch rather than replacing it wholesale -- an
+          # active PR preview's pr-preview/<n>/ subfolder must survive a
+          # production deploy landing at the same time.
+          keep_files: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy production build for ${{ github.sha }}"
