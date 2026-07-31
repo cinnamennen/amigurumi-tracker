@@ -33,10 +33,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # On close there's nothing to build, but pr-preview-action's cleanup
+      # step still needs to run inside a git repo -- checkout must not be
+      # skipped for that event (it was, previously, which made the cleanup
+      # job fail with "not in a git directory"). Split into two steps so the
+      # closed-event path doesn't need a ref that might no longer exist
+      # (e.g. the PR's branch got deleted on merge) -- it just uses
+      # whatever commit triggered the event.
       - uses: actions/checkout@v4
-        if: github.event.action != 'closed'
+        if: github.event_name == 'pull_request'
+
+      - uses: actions/checkout@v4
+        if: github.event_name == 'workflow_dispatch'
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && steps.pr.outputs.ref || github.head_ref }}
+          ref: ${{ steps.pr.outputs.ref }}
 
       - uses: pnpm/action-setup@v4
         if: github.event.action != 'closed'
@@ -57,9 +67,12 @@ jobs:
 
       - name: Build with PR preview base path
         if: github.event.action != 'closed'
+        # rossjrw/pr-preview-action names each PR's folder "pr-<n>" (not
+        # just "<n>") under umbrella-dir -- the build's base path has to
+        # match exactly or every asset 404s while index.html still loads.
         run: >
           pnpm --filter @amigurumi/web exec vite build
-          --base=/amigurumi-tracker/pr-preview/${{ github.event.pull_request.number || inputs.pr_number }}/
+          --base=/amigurumi-tracker/pr-preview/pr-${{ github.event.pull_request.number || inputs.pr_number }}/
 
       - uses: rossjrw/pr-preview-action@v1
         with:
