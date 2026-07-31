@@ -105,6 +105,10 @@ const filtered = computed(() =>
 </template>
 
 <style scoped>
+  h1 {
+    margin-top: 0;
+  }
+
   .filters {
     display: flex;
     flex-wrap: wrap;
@@ -112,9 +116,9 @@ const filtered = computed(() =>
     align-items: end;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #fff;
-    border: 1px solid #eadfd8;
-    border-radius: 0.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
   }
 
   .field {
@@ -137,9 +141,17 @@ const filtered = computed(() =>
   .field input,
   .field select {
     padding: 0.4rem 0.6rem;
-    border: 1px solid #d8ccc3;
-    border-radius: 0.375rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
     font: inherit;
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast);
+  }
+
+  .field input:hover,
+  .field select:hover {
+    border-color: var(--color-accent);
   }
 
   .grid {
@@ -149,17 +161,28 @@ const filtered = computed(() =>
   }
 
   .empty {
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .card {
     display: block;
     padding: 1rem;
-    border-radius: 0.75rem;
-    background: #fff;
-    border: 1px solid #eadfd8;
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
     text-decoration: none;
     color: inherit;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast),
+      border-color var(--transition-fast);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
   }
 
   .thumb {
@@ -168,8 +191,8 @@ const filtered = computed(() =>
     justify-content: center;
     height: 6rem;
     margin-bottom: 0.5rem;
-    background: #f0e6e0;
-    border-radius: 0.5rem;
+    background: var(--color-neutral-soft);
+    border-radius: var(--radius-sm);
     overflow: hidden;
   }
 
@@ -182,7 +205,7 @@ const filtered = computed(() =>
   .thumb-placeholder {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #c2618d;
+    color: var(--color-accent);
   }
 
   .card h3 {
@@ -191,7 +214,7 @@ const filtered = computed(() =>
 
   .meta {
     margin: 0;
-    color: #7a6d64;
+    color: var(--color-text-muted);
     font-size: 0.875rem;
   }
 
@@ -205,9 +228,9 @@ const filtered = computed(() =>
   .tag {
     font-size: 0.6875rem;
     padding: 0.0625rem 0.375rem;
-    border-radius: 999px;
-    background: #f4efe9;
-    color: #7a6d64;
+    border-radius: var(--radius-pill);
+    background: var(--color-tag-bg);
+    color: var(--color-text-muted);
   }
 
   .badges {
@@ -219,11 +242,11 @@ const filtered = computed(() =>
   .badge {
     font-size: 0.75rem;
     padding: 0.125rem 0.5rem;
-    border-radius: 999px;
-    background: #f0e6e0;
+    border-radius: var(--radius-pill);
+    background: var(--color-neutral-soft);
   }
 
   .badge.done {
-    background: #dcefe0;
+    background: var(--color-success-bg);
   }
 </style>
