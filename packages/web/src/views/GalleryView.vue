@@ -27,6 +27,23 @@ function isCompleted(p: Pattern): boolean {
   return userState.patternState(p.id).completed || p.completed;
 }
 
+function percent(count: number, total: number): number {
+  return total === 0 ? 0 : Math.round((count / total) * 100);
+}
+
+const stats = computed(() => {
+  const total = patterns.length;
+  const haveIt = patterns.filter(isHaveIt).length;
+  const completed = patterns.filter(isCompleted).length;
+  return {
+    total,
+    haveIt,
+    haveItPercent: percent(haveIt, total),
+    completed,
+    completedPercent: percent(completed, total),
+  };
+});
+
 const filtered = computed(() =>
   patterns.filter((p) => {
     if (search.value && !p.name.toLowerCase().includes(search.value.toLowerCase())) return false;
@@ -42,6 +59,21 @@ const filtered = computed(() =>
 
 <template>
   <h1>Gallery ({{ filtered.length }} / {{ patterns.length }} patterns)</h1>
+
+  <dl class="stats" aria-label="Collection progress">
+    <div class="stat">
+      <dt>Total patterns</dt>
+      <dd>{{ stats.total }}</dd>
+    </div>
+    <div class="stat">
+      <dt>Have it</dt>
+      <dd>{{ stats.haveIt }} <span class="stat-percent">({{ stats.haveItPercent }}%)</span></dd>
+    </div>
+    <div class="stat">
+      <dt>Made</dt>
+      <dd>{{ stats.completed }} <span class="stat-percent">({{ stats.completedPercent }}%)</span></dd>
+    </div>
+  </dl>
 
   <form class="filters" @submit.prevent>
     <div class="field">
@@ -105,6 +137,41 @@ const filtered = computed(() =>
 </template>
 
 <style scoped>
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .stat {
+    padding: 0.75rem 1.25rem;
+    background: #fff;
+    border: 1px solid #eadfd8;
+    border-radius: 0.75rem;
+    min-width: 8rem;
+  }
+
+  .stat dt {
+    margin: 0 0 0.25rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #7a6d64;
+  }
+
+  .stat dd {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .stat-percent {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #7a6d64;
+  }
+
   .filters {
     display: flex;
     flex-wrap: wrap;
