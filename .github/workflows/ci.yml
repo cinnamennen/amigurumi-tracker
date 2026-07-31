@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  typecheck-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.29.3
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Web imports data/patterns.json directly, so it has to exist before
+      # typecheck runs (see .github/workflows/deploy.yml for the same fix).
+      - run: pnpm --filter @amigurumi/pipeline run build:catalog
+
+      - run: pnpm run typecheck
+
+      - run: pnpm run test
