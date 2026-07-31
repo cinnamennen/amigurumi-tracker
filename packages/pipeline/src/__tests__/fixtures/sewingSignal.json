@@ -1,0 +1,4559 @@
+{
+  "Tiny Angel Wings": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Apple": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Aviator Hat": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Baby Bottle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Backpack - Safari": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Barista Apron": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Baseball and Bat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Baseball Cap": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Basketball": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Beach Ball": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Beach Towel": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Beanie": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Binoculars": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Birthday Cake": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Book": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Bowler Hat": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Bowling Set": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Bowtie": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Bread": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Briefcase": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Broom": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Buckle Backpack": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Burger": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Campfire": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Camping Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Camping Lantern": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Camping Pack": {
+    "sewingAmount": "medium",
+    "sew": 6,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 6
+  },
+  "Tiny Candy Corn": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Car Tire": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Carrot Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Caterpillar Wings": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Cauldron": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Cell Phone": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Chinese Knot": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Coconut Drink": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Coffee Cup": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Compass": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Construction Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Cooking Pot": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Cotton Candy": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Creamer": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Crown King": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Crown Queen": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 4,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Dung Ball": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Ear Flap Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Easter Egg Shell": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Firefighter Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Firefly Jar": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Floatie": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Flower Purse": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Football": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Football Helmet": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Fried Egg": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Frisbee": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Garbage Can": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Golden Dumpling": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Golf Set": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Graduation Cap": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Graduation Diploma": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Graduation Gown": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Heart": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Hockey Set": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Ice Cream": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Kettlebell": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Lily Pad": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Marshmallows": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Mustache": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Party Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Pear": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Pickleball Set": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Pie": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Piggy Bank": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Ping Pong Set": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Pizza": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Plant Hanger": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Police Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Pool Floatie": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Pretzel": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Red Envelope": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Royal Cloak": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Safari Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Scarf": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Sheet Mask": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Shoes": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Shovel": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Sleep Mask": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Soccer Ball": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Soda Cup": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Spa Headband": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Spa Towel": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Sprout": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Storm Cloud": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Straw Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Sun": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Sun Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Swim Cap Set": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Tea Bag": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Tea Set": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Teddy Bear": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Tennis Set": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Tent": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Tote": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Treasure Chest": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 10
+  },
+  "Tiny Trophy": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Tutu": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny UFO": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Vest": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Victorian Wig": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Volleyball": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Water Bottle": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Watering Can": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Whipped Cream": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Workout Gear": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Yuzu": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Zafu Cushion": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "BMO": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 3,
+    "safetyEye": 2,
+    "total": 7
+  },
+  "BMO’s Controller": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Finn": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 7
+  },
+  "Finn's Backpack": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Ice King": {
+    "sewingAmount": "high",
+    "sew": 14,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 20
+  },
+  "Ice King's Castle": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Jake": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Jake's Bacon Pancakes": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Albie the Phoenix": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Andre the Skunk": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Andy the Owl": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Baobao the Panda": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 8
+  },
+  "Bella the Kangaroo": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Billy the Unicorn": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Bo the Chicken": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Bri the Hummingbird": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Buster the Labrador": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Charlie The Roach": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Chico the Lizard": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Chilli the Frog": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 6
+  },
+  "Chuck the Duck": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Coco the Monkey": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Colonel the St. Bernard": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 9
+  },
+  "Cornelius the Bee": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Cupid The Lovebird": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Darwin the Owl": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 5,
+    "safetyEye": 3,
+    "total": 15
+  },
+  "Emi the Wolf": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Emilio the Turtle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Fitz the Hedgehog": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Fitzherbert the Bear": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 6,
+    "safetyEye": 1,
+    "total": 12
+  },
+  "Gertrude the Llama": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Grace the Opossum": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Gus the Orangutan": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Harriet the Rabbit": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Henri the Frog": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 5
+  },
+  "Hugo the Bulldog": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Jack the Monkey": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 8
+  },
+  "Jasper the Zebra": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Jia the Fire Horse": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Kaida the Dragon": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Kara the Highland Cow": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Kiki the Chick": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Klaus the Crocodile": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 2,
+    "total": 8
+  },
+  "Lavender the Cow": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Lizzie the Corgi": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 9,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Lulu the Elephant": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 14
+  },
+  "Maeve the Duck": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Martha The Pigeon": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Nico the Cat": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Penny the Guinea Pig": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Poppi the Hippo": {
+    "sewingAmount": "medium",
+    "sew": 6,
+    "embroider": 0,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Reese the Mallard Duck": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Reginald the Peacock": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 3,
+    "safetyEye": 3,
+    "total": 11
+  },
+  "Ronnie The Lamb": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Roy the Camel": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Scooter Raccoon": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Sebastian the Lion": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Sophie the Poodle": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Strawberry the Axolotl": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 4,
+    "total": 10
+  },
+  "Stu the Goose": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Suri the Cheetah": {
+    "sewingAmount": "high",
+    "sew": 9,
+    "embroider": 2,
+    "safetyEye": 3,
+    "total": 14
+  },
+  "Tanya the Tiger": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Taylor the Goat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tim the Canadian Goose": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Tiny Manatee": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tito The Swan - Woobles": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Toast the Shiba Inu": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 6,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Tony the Rat": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Vacation-Pierre": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Wade the Ox": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Willis the Rhino": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 14
+  },
+  "Zara the Giraffe": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Ziggy the Platypus": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Zoe the Flamingo": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Carl the Caterpillar": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Edith The Butterfly": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Iris the Ladybug": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Miles the Firefly": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Roland the Beetle": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Baby Bella": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Cater-Little": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Itty Bitty Wittle Bunny": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Lil' Lion": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Poquita Chickita": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Shark-ling": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Teensy Weensy Narwhal": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Baby Bee": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Diego the Stingray": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Jerry the Jellyfish": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 2
+  },
+  "Murphy the Eel": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Poe the Anglerfish": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 16
+  },
+  "Tank the Shark": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Vlad the Kraken": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Baby Martian": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Bepi the Mercurian": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Tiny Comet": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Planet": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Satellite": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Ursa the Venusian": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Wibbit the Neptunian": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Zorp the Martian": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Barbie": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Barbie's Boa": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Barbie's Handbag": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Barbie's Headband": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Barbie's Mirror": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ken": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Ken's Outfit": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Batarang": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Batman": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 7
+  },
+  "Joker": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Joker's Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Beetlejuice": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 10,
+    "safetyEye": 1,
+    "total": 17
+  },
+  "Lydia": {
+    "sewingAmount": "high",
+    "sew": 9,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Sandworm": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Fiorello the Tulip": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Marguerite the Daisy": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 2
+  },
+  "Thalia the Rose": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Bingo": {
+    "sewingAmount": "high",
+    "sew": 12,
+    "embroider": 5,
+    "safetyEye": 3,
+    "total": 20
+  },
+  "Bluey": {
+    "sewingAmount": "high",
+    "sew": 11,
+    "embroider": 3,
+    "safetyEye": 3,
+    "total": 17
+  },
+  "Bob Bilby": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Chattermax": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 11
+  },
+  "ChatterSnax": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Christmas Cracker": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Hecuba": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 13
+  },
+  "Hecuba's Shovel": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Veranda Santa Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Dai and Suki The Love Birds": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Doug the Pug": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Mushroom House": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ollie the Lamb": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Outer Space Mobile": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Pippa the Octopus": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Sam the Sloth": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Woobles Celebration Book": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Van": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Cheer Bear": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Funshine Bear": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Grumpy Bear": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Ace the Squirrel": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Ari the Partridge": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Bernard the Elf": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Betsy the Elf": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Christmas Tree A": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Christmas Tree B": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Claire the Angel": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Douglas the Fir": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Hazel the Nutcrakcer": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Howard the Yeti": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 7
+  },
+  "Janus the Stocking": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Lana the Alpaca": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Meg The Gingerbread Woman": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Noel the Snow Wooble": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Peppi the Candy Cane": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Ralph the Reindeer": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Roosevelt the Moose": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Ryker the Caribou": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Serge the Beaver": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Ted the Gingerbread Man": {
+    "sewingAmount": "high",
+    "sew": 1,
+    "embroider": 10,
+    "safetyEye": 1,
+    "total": 12
+  },
+  "Tiny Chestnut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Christmas Bell": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Christmas Ornament": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 4,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Drum": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Elf Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Gingerbread House": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Hot Cocoa": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Ice Skates": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Lump of Coal": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Magical Elf": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 5,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Mittens": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Nutcracker Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Present": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Skis": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Snowman": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Spinning Top": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Stocking": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Toy Blocks": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Toy Boat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Toy Candy": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Toy Car": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Tree Topper": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Wreath": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Yo-Yo": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tori the Cardinal": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Willow the Fawn": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Oscar the Triceratops": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Phoebe the Stegosaurus": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Tessa the Pterodactyl": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Hugh the Capybara": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Mango The Toucan": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 8
+  },
+  "Phyllis The Manatee": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Soli The Red Panda": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Alice the Strawberry": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Bear Donut": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Bennett the Cookie": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Bernadette the Beet": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Bigs the Apple": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Bitten": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Bonnie the Jelly": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Clyde the Peanut Butter": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Darcy the Milk": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Drippy Donut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Filled Donut": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Frosted Donut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Joe the Mug": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Log Donut": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Mateo the Avocado": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Mochi Donut": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Narwhal Donut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Oishi the Sushi": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Pinya The Pineapple": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Pyrus & Li the Pears": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Three Peas in a Pod": {
+    "sewingAmount": "high",
+    "sew": 0,
+    "embroider": 5,
+    "safetyEye": 8,
+    "total": 13
+  },
+  "Tiny Clam with Pearl": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Esperanza the Fairy": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Flump the Gnome": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Irving the Shroom": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Mimi the Snail": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Peat the Troll": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Tiny Flower Wand": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Hammer": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Lettuce Leaf": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Spore": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Frank the Hotdog": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Sandy the Watermelon": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Cindy Lou Who": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Cindy's Candy Cane": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Max": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Max's Antler": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Egg on Rice": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Eggshell Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Soy Sauce Bottle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Agatha the Vamoire": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Amun the Mummy": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Dave the Werewolf": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 12
+  },
+  "Edgar the Skeleton": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Hal The Jack-o-Lantern": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 4,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Luna the Bat": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Maisey The Candy Corn": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Mort the Grim Reaper": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 7
+  },
+  "Nyx the Spider": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Pumpkin Costume": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Salem the Cat": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 2
+  },
+  "Snooky the Ghost": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Steve the Frankenstein": {
+    "sewingAmount": "high",
+    "sew": 2,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Tiny Bat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Coffin": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 7
+  },
+  "Tiny Crystal Ball": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Flashlight": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Halloween Cape": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Halloween Mask": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Hourglass": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Moon": {
+    "sewingAmount": "medium",
+    "sew": 6,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 6
+  },
+  "Tiny Pumpkin": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Scythe": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Skull": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Spider": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Spirit Board": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny Toilet Paper": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Trick or Treat Bag": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Witch Cloak": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Witch Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Buckbeak": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Chocolate Frog": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Crookshanks": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Dobby": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Dobby’s Sock": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Golden Snitch": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Harry Potter": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Hermione": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "House Scarves": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Lord Voldemort": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Mandrake": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Nimbus 2000": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ron": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Scabbers": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Sorting Hat": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Fawkes": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Hedwig": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Nagini": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Kimi the Green Heron": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Nova The Blue Jay": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Tate the Black-capped Chickadee": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Derpy": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 14,
+    "safetyEye": 1,
+    "total": 23
+  },
+  "Sussie": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Angel": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 6,
+    "safetyEye": 3,
+    "total": 17
+  },
+  "Angel’s Hula Outfit": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Lilo": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Scrump": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Stitch": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 4,
+    "safetyEye": 3,
+    "total": 14
+  },
+  "Stitch’s Ukulele": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Balrog": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Bilbo": {
+    "sewingAmount": "high",
+    "sew": 11,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 14
+  },
+  "Frodo": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Gollum": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Samwise": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Tiny Balrog's Whip": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Frodo's Sting": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Gandalf’s Staff": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Gollum's Fish": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Hobbit Stein": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Red Book": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Sam's Frying Pan": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Shire Firework": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Miffy": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 2
+  },
+  "Miffy Chinese Lantern": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 5,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Miffy Tulip": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Bee": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Chicken Jockey": {
+    "sewingAmount": "high",
+    "sew": 14,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 17
+  },
+  "Creeper": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Ender Dragon": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Llama": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 7,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Pig": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Baby Zombie": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Dragon's Breath": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Iron Sword": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Llama's Carpet": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Music Disc": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Potted Daisy": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Tiny Saddle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Warden": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Zombie": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Friendship Bracelet": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Lenovo Legion Go": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Lenovo Legion Go (unofficial)": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Val the Heart": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Willie the Wooble Wagon": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Applejack": {
+    "sewingAmount": "high",
+    "sew": 15,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 17
+  },
+  "Twilight Sparkle": {
+    "sewingAmount": "high",
+    "sew": 17,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 19
+  },
+  "Rocket": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Star": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Stella the Astronaut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Cherries": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ghosts": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 2,
+    "total": 3
+  },
+  "Pac-Man": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Turn to White": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 3
+  },
+  "Snoopy": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 7
+  },
+  "Ana the Sunflower": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Clint the Cacuts": {
+    "sewingAmount": "high",
+    "sew": 2,
+    "embroider": 7,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Jade the Succulent": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Olivia the Barrel Cactus": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Ophelia the Monstera": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Otis the Snake Plant": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Rosie String of Pearls": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Sidney the Prickly Pear": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Sugar & Snow Pea": {
+    "sewingAmount": "high",
+    "sew": 0,
+    "embroider": 4,
+    "safetyEye": 6,
+    "total": 10
+  },
+  "Tiny Bamboo": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Blossom": {
+    "sewingAmount": "high",
+    "sew": 11,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 14
+  },
+  "Buttercup": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Mojo": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 3,
+    "safetyEye": 2,
+    "total": 10
+  },
+  "Bandana": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Beret": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Collar Bowtie": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Collar Flower": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Collar Spike": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Collar Standard": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Collar Victorian Ruffle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ears Furry": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ears Rounded": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Ears Triangle": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Flower Crown": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Harness": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tail Curly": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tail Fluffy": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tail Straight": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Toy Cat Bed": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Toy Catnip Mouse": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Toy Fishing Rod": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Toy Food Bowl": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Toy Tiny Puke": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Pusheen": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Stormy": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Badtz-Maru": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Chococat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Cinnamoroll": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Cinnamoroll's Star": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Halloween Hello Kitty": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 6,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Hello Kitty": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Hello Kitty's Milk Bottle": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 3,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Keroppi": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 4,
+    "total": 12
+  },
+  "Kuromi": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "My Melody": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 11
+  },
+  "My Melody's Rose": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Pochacco": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Pompompurin": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Shaggy": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Knuckles the Echidna": {
+    "sewingAmount": "high",
+    "sew": 9,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Sonic the Hedgehog": {
+    "sewingAmount": "high",
+    "sew": 12,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 15
+  },
+  "Tails the Fox": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 13
+  },
+  "Tiny Chaos Emerald": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Gary": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 6
+  },
+  "Gary's Food Bowl": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Patrick": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 3,
+    "total": 8
+  },
+  "Patrick's Tiny Jellyfish": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "SpongeBob": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 4,
+    "safetyEye": 2,
+    "total": 9
+  },
+  "Spongebob's Jellyfishing Net": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Squidward": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Squidward's Clarinet": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Front Man": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Player": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Red Guard": {
+    "sewingAmount": "high",
+    "sew": 3,
+    "embroider": 8,
+    "safetyEye": 0,
+    "total": 11
+  },
+  "Tiny Coffin Gift": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Dalgona": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 6,
+    "safetyEye": 0,
+    "total": 6
+  },
+  "Tiny Ddakji": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Young-Hee": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Captain Kirk": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Spock": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Tribble": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Uhura": {
+    "sewingAmount": "high",
+    "sew": 9,
+    "embroider": 5,
+    "safetyEye": 3,
+    "total": 17
+  },
+  "Flopsy the Bunny": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 8
+  },
+  "Norman the Sheep": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 0,
+    "safetyEye": 3,
+    "total": 13
+  },
+  "Party Octopus": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 3,
+    "total": 6
+  },
+  "Fig": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Fig's Adventure Bag": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Hedge": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Hedge's Spyglass": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Maple": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Maple's Map": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Stick": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 8
+  },
+  "Stick's Treasure Chest": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Chistery": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Chistery's Wings": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Elphaba Thropp": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Elphaba's Broom": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Glinda Upland": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Glinda's Wand": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Tiny Bunny Headband": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Rainbow": {
+    "sewingAmount": "medium",
+    "sew": 6,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 6
+  },
+  "Bacon the Pig": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Bubbles the Elephant": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Felix the Fox": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "JoJo the Bunny": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Lola the Polar Bear": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Lola-Loca (Earth Day Edition)": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Milly the Snake": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Pierre the Penguin": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Pierre Birthday Edition": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Tiny Headed Kingdom - Pip": {
+    "sewingAmount": "high",
+    "sew": 0,
+    "embroider": 4,
+    "safetyEye": 6,
+    "total": 10
+  },
+  "Skipper the Sea Otter": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Wally the Koala": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Walter the Bear": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Walter the Bear Cupcake": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Woobly Fox": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Bjorn the Narwhal": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Harley Quinn": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Harley Quinn's Mallet": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Cat Tray": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Skipper and Boom The Otters": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Chimmy": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 2,
+    "total": 5
+  },
+  "Cooky": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Koya": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Mang": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 5,
+    "safetyEye": 0,
+    "total": 13
+  },
+  "RJ": {
+    "sewingAmount": "medium",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Shooky": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Tata": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Chimmy Donut": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Cooky Donut": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Koya Donut": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Mang Donut": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 2,
+    "total": 10
+  },
+  "RJ Donut": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Shooky Donut": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Tata Donut": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Santa Claus": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 5,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Tiny Cardinal": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 4,
+    "safetyEye": 0,
+    "total": 7
+  },
+  "Tiny Cardinal Sweater": {
+    "sewingAmount": "medium",
+    "sew": 0,
+    "embroider": 5,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Tiny Santa Hat": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Santa Sack": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Fred the Dinosaur": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Wally the Brachiosaurus": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Wee Rex": {
+    "sewingAmount": "low",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Bunny Donut": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Cat Donut": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Unicorn Donut": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "The Grinch": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 3,
+    "total": 9
+  },
+  "Grinch’s Santa Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Sunny Side Up": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Bacon Blanket": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Fred the Dinosaur Loopable": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "JoJo the Bunny Loopable": {
+    "sewingAmount": "low",
+    "sew": 2,
+    "embroider": 0,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Pierre the Penguin Loopable": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 0,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Wally the Wine Koala": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Rainbow Dash": {
+    "sewingAmount": "high",
+    "sew": 15,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 17
+  },
+  "Snoopy's Tiny Santa Outfit": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Woodstock": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 8
+  },
+  "Woodstock's Tiny Winter Outfit": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Bubbles": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Cat Body": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Unicorn Wig": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Pip": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Scooby Snacks": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Mystery Machine": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 5
+  },
+  "Sunny the Elephant": {
+    "sewingAmount": "high",
+    "sew": 12,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 16
+  },
+  "Bjorn The Narwhal Macaron Edition": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Fred The Dino Flan Edition": {
+    "sewingAmount": "high",
+    "sew": 5,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Jojo The Bunny Dipped Strawberry Edition": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Pierre The Penguin Truffle Edition": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "The Wizard": {
+    "sewingAmount": "high",
+    "sew": 8,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Wizard's Balloon": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Felix the Fox Ornament": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Fred the Dino Ornament": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Lola Loca the Polar Bear Ornament": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Pierre the Penguin Ornament": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Santa Ornament": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 11
+  },
+  "Tiny Basket & Carrot": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 1
+  },
+  "Tiny Bucket & Shovel": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Dog Bowl and Bone": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Tiny Nurse Hat": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Tiny St. Patricks Hat": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Francios the Fox": {
+    "sewingAmount": "high",
+    "sew": 11,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 16
+  },
+  "Hubert the Frog Baby Toy": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Paige The Red Panda": {
+    "sewingAmount": "medium",
+    "sew": 5,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Scamper the Hamster": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Le Petit Pierre": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 0,
+    "total": 2
+  },
+  "Shrunken Head": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Keepy Uppy Ballon": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Urkel the Stork": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Crueller": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Easy Peasy Lemon Squeezy": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 2,
+    "safetyEye": 0,
+    "total": 3
+  },
+  "Earnie the Corn Cob": {
+    "sewingAmount": "low",
+    "sew": 0,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Gudetama In the Shell": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 4
+  },
+  "Dumbledore": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 5
+  },
+  "Gryffindor the Lion": {
+    "sewingAmount": "medium",
+    "sew": 4,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 6
+  },
+  "Hufflepuff the Badger": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 8
+  },
+  "Ravenclaw the Raven": {
+    "sewingAmount": "medium",
+    "sew": 3,
+    "embroider": 3,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Slytherin the Snake": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 7
+  },
+  "Stag Patronus": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 6,
+    "safetyEye": 3,
+    "total": 16
+  },
+  "Gandalf": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Merry": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Pippin": {
+    "sewingAmount": "high",
+    "sew": 10,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 13
+  },
+  "Snoopy's Tiny Beagle Scout Outfit": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Snoopy's Tiny Flying Ace Outfit": {
+    "sewingAmount": "none",
+    "sew": 0,
+    "embroider": 0,
+    "safetyEye": 0,
+    "total": 0
+  },
+  "Peeps Bunny": {
+    "sewingAmount": "low",
+    "sew": 1,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 3
+  },
+  "Peeps Chick": {
+    "sewingAmount": "medium",
+    "sew": 2,
+    "embroider": 1,
+    "safetyEye": 1,
+    "total": 4
+  },
+  "Kiki_Little Twin Stars": {
+    "sewingAmount": "high",
+    "sew": 6,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 9
+  },
+  "Lala_Little Twin Stars": {
+    "sewingAmount": "high",
+    "sew": 7,
+    "embroider": 2,
+    "safetyEye": 1,
+    "total": 10
+  },
+  "Scooby": {
+    "sewingAmount": "high",
+    "sew": 4,
+    "embroider": 4,
+    "safetyEye": 1,
+    "total": 9
+  }
+}

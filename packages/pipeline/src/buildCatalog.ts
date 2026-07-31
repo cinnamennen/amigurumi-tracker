@@ -2,13 +2,18 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { Catalog, type MaterialRow, type Pattern, type SkillLevel } from "@amigurumi/schema";
+import { Catalog, type MaterialRow, type Pattern, type SewingAmount, type SkillLevel } from "@amigurumi/schema";
 
 import { classifyColor, classifyWeight, parseAmountYds } from "./colorRecords.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const FIXTURE_PATH = join(__dirname, "__tests__/fixtures/frozenOutput.json");
+// Generated once by `pnpm run generate:sewing-signal` against the real
+// (gitignored) source PDFs -- see generateSewingSignal.ts. Falls back to
+// "unknown" per-pattern below if a pdf_file has no entry (e.g. this fixture
+// predates a pattern, or that PDF needed OCR that isn't implemented yet).
+const SEWING_SIGNAL_PATH = join(__dirname, "__tests__/fixtures/sewingSignal.json");
 const OUTPUT_PATH = join(__dirname, "../../web/src/data/patterns.json");
 
 interface TrackerRow {
@@ -102,9 +107,14 @@ function crosswalkKey(name: string, category: string): string {
   return name + "::" + category;
 }
 
+interface SewingSignalEntry {
+  sewingAmount: SewingAmount;
+}
+
 function buildCatalog(): Pattern[] {
   const raw = readFileSync(FIXTURE_PATH, "utf-8");
   const data = JSON.parse(raw) as FrozenOutput;
+  const sewingSignal = JSON.parse(readFileSync(SEWING_SIGNAL_PATH, "utf-8")) as Record<string, SewingSignalEntry>;
 
   const crosswalkByKey = new Map<string, CrosswalkRow>();
   for (const row of data.crosswalk) {
@@ -143,7 +153,7 @@ function buildCatalog(): Pattern[] {
       subcategory: tracker.animal_food,
       collectionTags,
       skillLevel: toSkillLevel(tracker.skill_level),
-      sewingAmount: "unknown",
+      sewingAmount: sewingSignal[pdfFile]?.sewingAmount ?? "unknown",
       materials,
       haveIt: tracker.have_it,
       completed: tracker.completed,

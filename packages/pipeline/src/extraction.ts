@@ -1,14 +1,21 @@
 /**
  * TS port of the extraction step that originally produced
  * frozenOutput.json (see AGENTS.md's "PDF structure" section for the three
- * layout families and why ~93/654 PDFs need OCR). Today's 654 patterns are
- * already fully covered by that frozen fixture, so none of this needs to
- * run yet -- it exists so that adding the *next* new pattern PDF has an
- * obvious place to wire in real pdfjs-dist/tesseract.js logic, rather than
- * requiring the old (deleted) Python environment.
- *
- * Implement each function when the first new pattern actually needs adding.
+ * layout families and why ~93/654 PDFs need OCR). The materials-page parsing
+ * that fed the v1 catalog is already fully covered by that frozen fixture
+ * and doesn't need to run again -- extractText is implemented for real
+ * because sewingSignal.ts's one-time fixture generation (see
+ * generateSewingSignal.ts) needs to scan *full* PDF text, not just the
+ * materials page. extractOcr/parseMaterials stay stubs until the first new
+ * pattern actually needs adding (they're for the materials-page pipeline,
+ * not sewing-signal scanning).
  */
+
+import { readFileSync } from "node:fs";
+
+// pdfjs-dist ships its Node-compatible build under this subpath; the
+// package's default export targets browsers and breaks under plain Node.
+import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 
 export interface ExtractedMaterialRow {
   color: string;
@@ -17,13 +24,22 @@ export interface ExtractedMaterialRow {
 }
 
 /**
- * Extracts raw text from a PDF's materials page via pdfjs-dist. Works for
- * the modern icon-grid and older numbered-legend layouts, which have real
- * embedded text. Throws for scanned/image-only PDFs -- callers should fall
- * back to extractOcr.
+ * Extracts all embedded text from a PDF, page by page, via pdfjs-dist.
+ * Works for the modern icon-grid and older numbered-legend layouts, which
+ * have a real text layer. Returns an empty string (not a throw) for
+ * scanned/image-only PDFs with no text layer -- callers that need those
+ * pages should fall back to extractOcr.
  */
-export function extractText(_pdfPath: string): Promise<string> {
-  throw new Error("extractText: not yet implemented -- wire in pdfjs-dist when the first new pattern needs it");
+export async function extractText(pdfPath: string): Promise<string> {
+  const data = new Uint8Array(readFileSync(pdfPath));
+  const doc = await pdfjsLib.getDocument({ data }).promise;
+  let text = "";
+  for (let pageNum = 1; pageNum <= doc.numPages; pageNum++) {
+    const page = await doc.getPage(pageNum);
+    const content = await page.getTextContent();
+    text += content.items.map((item) => ("str" in item ? item.str : "")).join(" ") + "\n";
+  }
+  return text;
 }
 
 /**
