@@ -188,6 +188,3 @@ export function parseAmountYds(raw: string): number | null {
   const n = Number.parseFloat(trimmed);
   return Number.isFinite(n) ? n : null;
 }
-
-// Deliberately broken for ami-fcq.15 CI-gate verification — reverted next commit.
-export const __ciGateCheck: number = "this is not a number";
