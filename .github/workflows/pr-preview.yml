@@ -80,3 +80,8 @@ jobs:
           preview-branch: gh-pages
           umbrella-dir: pr-preview
           pr-number: ${{ github.event.pull_request.number || inputs.pr_number }}
+          # action: auto infers deploy-vs-remove from the pull_request event
+          # type, but has no idea what to do with workflow_dispatch (used to
+          # generate a preview for a PR that predates this workflow) and
+          # silently no-ops instead of erroring -- be explicit for that case.
+          action: ${{ github.event_name == 'workflow_dispatch' && 'deploy' || 'auto' }}
