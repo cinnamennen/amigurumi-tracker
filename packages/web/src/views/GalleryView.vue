@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Pattern, SewingAmount, SkillLevel } from "@amigurumi/schema";
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
 import patternsJson from "../data/patterns.json";
 import { useUserStateStore } from "../stores/userState";
@@ -12,12 +13,42 @@ const categories = [...new Set(patterns.map((p) => p.category))].sort();
 const skillLevels = [...new Set(patterns.map((p) => p.skillLevel))].sort() as SkillLevel[];
 const sewingAmounts = [...new Set(patterns.map((p) => p.sewingAmount))].sort() as SewingAmount[];
 
-const search = ref("");
-const category = ref("");
-const skillLevel = ref("");
-const sewingAmount = ref("");
-const haveItOnly = ref(false);
-const completedOnly = ref(false);
+type SortOrder = "name" | "category";
+const SORT_ORDERS: SortOrder[] = ["name", "category"];
+
+// Filter/sort state lives in the URL query string, not just component
+// state -- so a filtered view is bookmarkable/shareable, survives a reload,
+// and (since navigating into a pattern uses router.push) the browser back
+// button naturally restores it too. Read once on setup; every change after
+// that writes back via router.replace (not push) so typing in the search
+// box doesn't spam browser history with one entry per keystroke.
+const route = useRoute();
+const router = useRouter();
+
+function queryString(key: string): string {
+  const value = route.query[key];
+  return typeof value === "string" ? value : "";
+}
+
+const search = ref(queryString("q"));
+const category = ref(queryString("category"));
+const skillLevel = ref(queryString("skill"));
+const sewingAmount = ref(queryString("sewing"));
+const haveItOnly = ref(queryString("haveIt") === "1");
+const completedOnly = ref(queryString("completed") === "1");
+const sort = ref<SortOrder>(SORT_ORDERS.includes(queryString("sort") as SortOrder) ? (queryString("sort") as SortOrder) : "name");
+
+watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, sort], () => {
+  const query: Record<string, string> = {};
+  if (search.value) query.q = search.value;
+  if (category.value) query.category = category.value;
+  if (skillLevel.value) query.skill = skillLevel.value;
+  if (sewingAmount.value) query.sewing = sewingAmount.value;
+  if (haveItOnly.value) query.haveIt = "1";
+  if (completedOnly.value) query.completed = "1";
+  if (sort.value !== "name") query.sort = sort.value;
+  router.replace({ query });
+});
 
 function isHaveIt(p: Pattern): boolean {
   return userState.patternState(p.id).haveIt || p.haveIt;
@@ -27,8 +58,8 @@ function isCompleted(p: Pattern): boolean {
   return userState.patternState(p.id).completed || p.completed;
 }
 
-const filtered = computed(() =>
-  patterns.filter((p) => {
+const filtered = computed(() => {
+  const result = patterns.filter((p) => {
     if (search.value && !p.name.toLowerCase().includes(search.value.toLowerCase())) return false;
     if (category.value && p.category !== category.value) return false;
     if (skillLevel.value && p.skillLevel !== skillLevel.value) return false;
@@ -36,8 +67,15 @@ const filtered = computed(() =>
     if (haveItOnly.value && !isHaveIt(p)) return false;
     if (completedOnly.value && !isCompleted(p)) return false;
     return true;
-  }),
-);
+  });
+  const sorted = [...result];
+  if (sort.value === "category") {
+    sorted.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+  } else {
+    sorted.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return sorted;
+});
 </script>
 
 <template>
@@ -76,6 +114,13 @@ const filtered = computed(() =>
     <div class="field checkbox">
       <input id="completed-only" v-model="completedOnly" type="checkbox" />
       <label for="completed-only">Made it</label>
+    </div>
+    <div class="field">
+      <label for="sort">Sort by</label>
+      <select id="sort" v-model="sort">
+        <option value="name">Name (A–Z)</option>
+        <option value="category">Category, then name</option>
+      </select>
     </div>
   </form>
 
