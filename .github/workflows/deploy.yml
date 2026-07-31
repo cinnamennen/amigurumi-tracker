@@ -1,7 +1,12 @@
 name: Deploy to GitHub Pages
 
+# Gated on CI actually passing, not just running after it by coincidence:
+# this only fires once the CI workflow_run completes, and the job-level `if`
+# below still checks its conclusion before doing anything.
 on:
-  push:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
     branches: [main]
   workflow_dispatch:
 
@@ -16,9 +21,12 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - uses: pnpm/action-setup@v4
         with:
