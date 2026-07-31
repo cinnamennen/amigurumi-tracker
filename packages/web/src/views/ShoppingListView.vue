@@ -98,7 +98,7 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
   }
 
   .intro {
-    color: #7a6d64;
+    color: var(--color-text-muted);
     max-width: 36rem;
   }
 
@@ -113,15 +113,15 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
   }
 
   .list thead th {
-    border-bottom: 2px solid #eadfd8;
+    border-bottom: 2px solid var(--color-border);
     font-size: 0.8125rem;
-    color: #7a6d64;
+    color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }
 
   .list tbody tr {
-    border-bottom: 1px solid #eadfd8;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .list tfoot td {
@@ -141,8 +141,8 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
     width: 0.875rem;
     height: 0.875rem;
     border-radius: 50%;
-    border: 1px solid #d8ccc3;
-    background: var(--swatch-color, #f0e6e0);
+    border: 1px solid var(--color-border-strong);
+    background: var(--swatch-color, var(--color-neutral-soft));
   }
 
   .swatch[data-family="Black"] {
@@ -193,11 +193,11 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
 
   .deficit {
     font-weight: 700;
-    color: #a34878;
+    color: var(--color-accent-strong);
   }
 
   .empty {
-    color: #7a6d64;
+    color: var(--color-text-muted);
     max-width: 32rem;
   }
 </style>

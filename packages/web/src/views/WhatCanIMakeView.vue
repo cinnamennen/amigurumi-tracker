@@ -60,30 +60,50 @@ const makeable = computed<Makeable[]>(() =>
 </template>
 
 <style scoped>
+  h1 {
+    margin-top: 0;
+  }
+
   .list {
     list-style: none;
     padding: 0;
   }
 
   .list li {
-    padding: 0.375rem 0;
+    padding: 0.5rem 0.75rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast);
+  }
+
+  .list li:hover {
+    background: var(--color-surface);
+  }
+
+  .list a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .list a:hover {
+    color: var(--color-accent);
   }
 
   .badge {
     font-size: 0.75rem;
     padding: 0.0625rem 0.5rem;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
   }
 
   .badge.verify {
-    background: #f6e3ee;
-    color: #a34878;
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
   }
 
   .empty {
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 </style>
