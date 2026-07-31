@@ -69,6 +69,11 @@ const FAMILY_WORDS: Record<string, ColorFamily> = {
  * Words that modify a family without being a family themselves. Kept
  * separate from FAMILY_WORDS so e.g. "Glitter Blue" resolves to
  * {family: Blue, qualifier: "Glitter"} rather than failing to match.
+ *
+ * "Dark" + Brown is the one qualifier backed by a real yarn SKU (the vendor
+ * sells a separate Dark Brown skein); every other qualifier here is
+ * collab-specific custom shading with no matching base-line SKU. See
+ * COLOR_PALETTE.md for the full comparison against the current lineup.
  */
 const QUALIFIER_WORDS = [
   "dark",
