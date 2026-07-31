@@ -28,7 +28,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         id: pr
         run: |
-          ref=$(gh pr view "${{ inputs.pr_number }}" --json headRefName -q .headRefName)
+          ref=$(gh pr view "${{ inputs.pr_number }}" --repo "${{ github.repository }}" --json headRefName -q .headRefName)
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
