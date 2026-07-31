@@ -20,7 +20,15 @@ function defaultState(): UserStateStore {
 function loadState(): UserStateStore {
   const raw = localStorage.getItem(STORAGE_KEY);
   if (!raw) return defaultState();
-  const parsed = UserStateStore.safeParse(JSON.parse(raw));
+  // Malformed JSON (corrupted storage, a future incompatible write) should
+  // fall back to defaults, not crash the whole app on load.
+  let json: unknown;
+  try {
+    json = JSON.parse(raw);
+  } catch {
+    return defaultState();
+  }
+  const parsed = UserStateStore.safeParse(json);
   return parsed.success ? parsed.data : defaultState();
 }
 

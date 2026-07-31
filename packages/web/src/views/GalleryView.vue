@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Pattern, SewingAmount, SkillLevel } from "@amigurumi/schema";
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
 import patternsJson from "../data/patterns.json";
 import { useUserStateStore } from "../stores/userState";
@@ -12,12 +13,42 @@ const categories = [...new Set(patterns.map((p) => p.category))].sort();
 const skillLevels = [...new Set(patterns.map((p) => p.skillLevel))].sort() as SkillLevel[];
 const sewingAmounts = [...new Set(patterns.map((p) => p.sewingAmount))].sort() as SewingAmount[];
 
-const search = ref("");
-const category = ref("");
-const skillLevel = ref("");
-const sewingAmount = ref("");
-const haveItOnly = ref(false);
-const completedOnly = ref(false);
+type SortOrder = "name" | "category";
+const SORT_ORDERS: SortOrder[] = ["name", "category"];
+
+// Filter/sort state lives in the URL query string, not just component
+// state -- so a filtered view is bookmarkable/shareable, survives a reload,
+// and (since navigating into a pattern uses router.push) the browser back
+// button naturally restores it too. Read once on setup; every change after
+// that writes back via router.replace (not push) so typing in the search
+// box doesn't spam browser history with one entry per keystroke.
+const route = useRoute();
+const router = useRouter();
+
+function queryString(key: string): string {
+  const value = route.query[key];
+  return typeof value === "string" ? value : "";
+}
+
+const search = ref(queryString("q"));
+const category = ref(queryString("category"));
+const skillLevel = ref(queryString("skill"));
+const sewingAmount = ref(queryString("sewing"));
+const haveItOnly = ref(queryString("haveIt") === "1");
+const completedOnly = ref(queryString("completed") === "1");
+const sort = ref<SortOrder>(SORT_ORDERS.includes(queryString("sort") as SortOrder) ? (queryString("sort") as SortOrder) : "name");
+
+watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, sort], () => {
+  const query: Record<string, string> = {};
+  if (search.value) query.q = search.value;
+  if (category.value) query.category = category.value;
+  if (skillLevel.value) query.skill = skillLevel.value;
+  if (sewingAmount.value) query.sewing = sewingAmount.value;
+  if (haveItOnly.value) query.haveIt = "1";
+  if (completedOnly.value) query.completed = "1";
+  if (sort.value !== "name") query.sort = sort.value;
+  router.replace({ query });
+});
 
 function isHaveIt(p: Pattern): boolean {
   return userState.patternState(p.id).haveIt || p.haveIt;
@@ -44,8 +75,8 @@ const stats = computed(() => {
   };
 });
 
-const filtered = computed(() =>
-  patterns.filter((p) => {
+const filtered = computed(() => {
+  const result = patterns.filter((p) => {
     if (search.value && !p.name.toLowerCase().includes(search.value.toLowerCase())) return false;
     if (category.value && p.category !== category.value) return false;
     if (skillLevel.value && p.skillLevel !== skillLevel.value) return false;
@@ -53,8 +84,15 @@ const filtered = computed(() =>
     if (haveItOnly.value && !isHaveIt(p)) return false;
     if (completedOnly.value && !isCompleted(p)) return false;
     return true;
-  }),
-);
+  });
+  const sorted = [...result];
+  if (sort.value === "category") {
+    sorted.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+  } else {
+    sorted.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return sorted;
+});
 </script>
 
 <template>
@@ -109,6 +147,13 @@ const filtered = computed(() =>
       <input id="completed-only" v-model="completedOnly" type="checkbox" />
       <label for="completed-only">Made it</label>
     </div>
+    <div class="field">
+      <label for="sort">Sort by</label>
+      <select id="sort" v-model="sort">
+        <option value="name">Name (A–Z)</option>
+        <option value="category">Category, then name</option>
+      </select>
+    </div>
   </form>
 
   <div class="grid">
@@ -137,6 +182,10 @@ const filtered = computed(() =>
 </template>
 
 <style scoped>
+  h1 {
+    margin-top: 0;
+  }
+
   .stats {
     display: flex;
     flex-wrap: wrap;
@@ -146,9 +195,9 @@ const filtered = computed(() =>
 
   .stat {
     padding: 0.75rem 1.25rem;
-    background: #fff;
-    border: 1px solid #eadfd8;
-    border-radius: 0.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     min-width: 8rem;
   }
 
@@ -157,7 +206,7 @@ const filtered = computed(() =>
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .stat dd {
@@ -169,7 +218,7 @@ const filtered = computed(() =>
   .stat-percent {
     font-size: 0.875rem;
     font-weight: 400;
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .filters {
@@ -179,9 +228,9 @@ const filtered = computed(() =>
     align-items: end;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #fff;
-    border: 1px solid #eadfd8;
-    border-radius: 0.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
   }
 
   .field {
@@ -204,9 +253,17 @@ const filtered = computed(() =>
   .field input,
   .field select {
     padding: 0.4rem 0.6rem;
-    border: 1px solid #d8ccc3;
-    border-radius: 0.375rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
     font: inherit;
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: border-color var(--transition-fast);
+  }
+
+  .field input:hover,
+  .field select:hover {
+    border-color: var(--color-accent);
   }
 
   .grid {
@@ -216,17 +273,28 @@ const filtered = computed(() =>
   }
 
   .empty {
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .card {
     display: block;
     padding: 1rem;
-    border-radius: 0.75rem;
-    background: #fff;
-    border: 1px solid #eadfd8;
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
     text-decoration: none;
     color: inherit;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast),
+      border-color var(--transition-fast);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
   }
 
   .thumb {
@@ -235,8 +303,8 @@ const filtered = computed(() =>
     justify-content: center;
     height: 6rem;
     margin-bottom: 0.5rem;
-    background: #f0e6e0;
-    border-radius: 0.5rem;
+    background: var(--color-neutral-soft);
+    border-radius: var(--radius-sm);
     overflow: hidden;
   }
 
@@ -249,7 +317,7 @@ const filtered = computed(() =>
   .thumb-placeholder {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #c2618d;
+    color: var(--color-accent);
   }
 
   .card h3 {
@@ -258,7 +326,7 @@ const filtered = computed(() =>
 
   .meta {
     margin: 0;
-    color: #7a6d64;
+    color: var(--color-text-muted);
     font-size: 0.875rem;
   }
 
@@ -272,9 +340,9 @@ const filtered = computed(() =>
   .tag {
     font-size: 0.6875rem;
     padding: 0.0625rem 0.375rem;
-    border-radius: 999px;
-    background: #f4efe9;
-    color: #7a6d64;
+    border-radius: var(--radius-pill);
+    background: var(--color-tag-bg);
+    color: var(--color-text-muted);
   }
 
   .badges {
@@ -286,11 +354,11 @@ const filtered = computed(() =>
   .badge {
     font-size: 0.75rem;
     padding: 0.125rem 0.5rem;
-    border-radius: 999px;
-    background: #f0e6e0;
+    border-radius: var(--radius-pill);
+    background: var(--color-neutral-soft);
   }
 
   .badge.done {
-    background: #dcefe0;
+    background: var(--color-success-bg);
   }
 </style>

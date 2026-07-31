@@ -83,8 +83,8 @@ const userState = useUserStateStore();
     height: 8rem;
     width: 8rem;
     margin: 0.5rem 0;
-    background: #f0e6e0;
-    border-radius: 0.75rem;
+    background: var(--color-neutral-soft);
+    border-radius: var(--radius-md);
     overflow: hidden;
   }
 
@@ -97,12 +97,12 @@ const userState = useUserStateStore();
   .thumb-placeholder {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #c2618d;
+    color: var(--color-accent);
   }
 
   .meta {
     margin: 0;
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .tags {
@@ -115,9 +115,9 @@ const userState = useUserStateStore();
   .tag {
     font-size: 0.6875rem;
     padding: 0.0625rem 0.375rem;
-    border-radius: 999px;
-    background: #f4efe9;
-    color: #7a6d64;
+    border-radius: var(--radius-pill);
+    background: var(--color-tag-bg);
+    color: var(--color-text-muted);
   }
 
   .toggles {
@@ -138,33 +138,83 @@ const userState = useUserStateStore();
     gap: 0.5rem;
   }
 
+  /* Actual swatch fill per color family -- previously the data-family
+     attribute was set but nothing rendered it, so every swatch was just an
+     empty ring regardless of color. */
   .color-swatch {
     display: inline-block;
     width: 0.875rem;
     height: 0.875rem;
     border-radius: 50%;
-    border: 1px solid #d8ccc3;
+    border: 1px solid var(--color-border-strong);
+    background: var(--swatch-color, var(--color-neutral-soft));
+  }
+
+  .color-swatch[data-family="Black"] {
+    --swatch-color: #2b2320;
+  }
+  .color-swatch[data-family="White"] {
+    --swatch-color: #ffffff;
+  }
+  .color-swatch[data-family="Gray"] {
+    --swatch-color: #9a9086;
+  }
+  .color-swatch[data-family="Brown"] {
+    --swatch-color: #6b4a35;
+  }
+  .color-swatch[data-family="Tan"] {
+    --swatch-color: #d2b48c;
+  }
+  .color-swatch[data-family="Cream"] {
+    --swatch-color: #f5edd8;
+  }
+  .color-swatch[data-family="Red"] {
+    --swatch-color: #c0392b;
+  }
+  .color-swatch[data-family="Pink"] {
+    --swatch-color: #e28fb0;
+  }
+  .color-swatch[data-family="Orange"] {
+    --swatch-color: #e08324;
+  }
+  .color-swatch[data-family="Yellow"] {
+    --swatch-color: #e8c547;
+  }
+  .color-swatch[data-family="Green"] {
+    --swatch-color: #5c8a4a;
+  }
+  .color-swatch[data-family="Blue"] {
+    --swatch-color: #4a7bab;
+  }
+  .color-swatch[data-family="Purple"] {
+    --swatch-color: #8a5fa8;
+  }
+  .color-swatch[data-family="Gold"] {
+    --swatch-color: #c9a227;
+  }
+  .color-swatch[data-family="Silver"] {
+    --swatch-color: #b8b8b8;
   }
 
   .badge {
     font-size: 0.75rem;
     padding: 0.0625rem 0.5rem;
-    border-radius: 999px;
-    background: #f0e6e0;
+    border-radius: var(--radius-pill);
+    background: var(--color-neutral-soft);
   }
 
   .badge.qualifier {
-    background: #f6e3ee;
-    color: #a34878;
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
   }
 
   .badge.placeholder {
-    background: #eef1e6;
-    color: #5c7048;
+    background: var(--color-success-soft);
+    color: var(--color-success);
   }
 
   .empty {
-    color: #7a6d64;
+    color: var(--color-text-muted);
   }
 
   .notes {
@@ -172,13 +222,18 @@ const userState = useUserStateStore();
     max-width: 30rem;
     display: block;
     padding: 0.5rem;
-    border: 1px solid #d8ccc3;
-    border-radius: 0.5rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
     font: inherit;
+    transition: border-color var(--transition-fast);
+  }
+
+  .notes:hover {
+    border-color: var(--color-accent);
   }
 
   .purchase-placeholder {
-    color: #7a6d64;
+    color: var(--color-text-muted);
     font-style: italic;
   }
 </style>
