@@ -1,49 +1,97 @@
 <script setup lang="ts"></script>
 
 <template>
-  <nav class="nav">
-    <RouterLink to="/">Gallery</RouterLink>
-    <RouterLink to="/stash">Stash</RouterLink>
-    <RouterLink to="/what-can-i-make">What Can I Make</RouterLink>
-  </nav>
+  <header class="nav">
+    <RouterLink to="/" class="brand">🧶 Amigurumi Tracker</RouterLink>
+    <div class="links">
+      <RouterLink to="/">Gallery</RouterLink>
+      <RouterLink to="/stash">Stash</RouterLink>
+      <RouterLink to="/what-can-i-make">What Can I Make</RouterLink>
+    </div>
+  </header>
   <main>
     <RouterView />
   </main>
 </template>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    background: #faf7f5;
-    color: #2b2320;
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.25;
+  }
+
+  a {
+    color: inherit;
   }
 
   .nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5rem 1.5rem;
     padding: 1rem 1.5rem;
-    background: #fff;
-    border-bottom: 1px solid #eadfd8;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 
-  .nav a {
+  .brand {
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .links a {
     display: inline-block;
     padding: 0.25rem 0;
-    color: #2b2320;
     text-decoration: none;
     font-weight: 600;
+    color: var(--color-text-muted);
+    padding-bottom: 0.125rem;
+    border-bottom: 2px solid transparent;
     /* Wrap onto its own line as a whole link instead of breaking mid-phrase
        (e.g. "What Can I / Make") when the nav doesn't fit on one row. */
     white-space: nowrap;
+    transition:
+      color var(--transition-fast),
+      border-color var(--transition-fast);
   }
 
-  .nav a.router-link-active {
-    color: #c2618d;
+  .links a:hover {
+    color: var(--color-text);
+  }
+
+  .links a.router-link-active {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
   }
 
   main {
     padding: 1.5rem;
+    max-width: 72rem;
+    margin: 0 auto;
   }
 </style>
