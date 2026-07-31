@@ -69,14 +69,14 @@ const filtered = computed(() =>
         <option v-for="s in sewingAmounts" :key="s" :value="s">{{ s }}</option>
       </select>
     </div>
-    <div class="field checkbox">
+    <label class="field checkbox">
       <input id="have-it-only" v-model="haveItOnly" type="checkbox" />
-      <label for="have-it-only">Have it</label>
-    </div>
-    <div class="field checkbox">
+      Have it
+    </label>
+    <label class="field checkbox">
       <input id="completed-only" v-model="completedOnly" type="checkbox" />
-      <label for="completed-only">Made it</label>
-    </div>
+      Made it
+    </label>
   </form>
 
   <div class="grid">
@@ -127,7 +127,24 @@ const filtered = computed(() =>
   .field.checkbox {
     flex-direction: row;
     align-items: center;
-    gap: 0.375rem;
+    gap: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* Padding makes the whole row (not just the tiny native checkbox) a
+       comfortably tappable target on mobile. */
+    padding: 0.4rem 0.5rem;
+    margin: -0.4rem -0.5rem;
+    border-radius: 0.375rem;
+  }
+
+  .field.checkbox:hover {
+    background: #f4efe9;
+  }
+
+  .field.checkbox input {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: #c2618d;
   }
 
   .field label {

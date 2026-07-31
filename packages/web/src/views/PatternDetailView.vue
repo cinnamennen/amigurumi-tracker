@@ -122,8 +122,31 @@ const userState = useUserStateStore();
 
   .toggles {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 1rem 0;
+  }
+
+  .toggles label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* Padding makes the whole row (not just the tiny native checkbox) a
+       comfortably tappable target on mobile. */
+    padding: 0.4rem 0.5rem;
+    margin: -0.4rem -0.5rem;
+    border-radius: 0.375rem;
+  }
+
+  .toggles label:hover {
+    background: #f4efe9;
+  }
+
+  .toggles input {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: #c2618d;
   }
 
   .materials {

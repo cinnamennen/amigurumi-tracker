@@ -21,16 +21,22 @@
 
   .nav {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
     padding: 1rem 1.5rem;
     background: #fff;
     border-bottom: 1px solid #eadfd8;
   }
 
   .nav a {
+    display: inline-block;
+    padding: 0.25rem 0;
     color: #2b2320;
     text-decoration: none;
     font-weight: 600;
+    /* Wrap onto its own line as a whole link instead of breaking mid-phrase
+       (e.g. "What Can I / Make") when the nav doesn't fit on one row. */
+    white-space: nowrap;
   }
 
   .nav a.router-link-active {
