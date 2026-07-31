@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem 1.5rem;
     padding: 1rem 1.5rem;
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
@@ -60,15 +60,21 @@
 
   .links {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
   }
 
   .links a {
+    display: inline-block;
+    padding: 0.25rem 0;
     text-decoration: none;
     font-weight: 600;
     color: var(--color-text-muted);
     padding-bottom: 0.125rem;
     border-bottom: 2px solid transparent;
+    /* Wrap onto its own line as a whole link instead of breaking mid-phrase
+       (e.g. "What Can I / Make") when the nav doesn't fit on one row. */
+    white-space: nowrap;
     transition:
       color var(--transition-fast),
       border-color var(--transition-fast);
