@@ -4,6 +4,7 @@ import { computed } from "vue";
 
 import patternsJson from "../data/patterns.json";
 import { useUserStateStore } from "../stores/userState";
+import { neededByFamily } from "../utils/materialNeeds";
 
 const patterns = patternsJson as Pattern[];
 const userState = useUserStateStore();
@@ -14,17 +15,6 @@ function isHaveIt(p: Pattern): boolean {
 
 function isCompleted(p: Pattern): boolean {
   return userState.patternState(p.id).completed || p.completed;
-}
-
-// Family-level yardage totals needed per pattern (summing multiple materials
-// in the same family), ignoring placeholder "your choice" materials.
-function neededByFamily(materials: MaterialRow[]): Partial<Record<ColorFamily, number>> {
-  const totals: Partial<Record<ColorFamily, number>> = {};
-  for (const m of materials) {
-    if (m.isPlaceholder || m.amountYds === null) continue;
-    totals[m.colorFamily] = (totals[m.colorFamily] ?? 0) + m.amountYds;
-  }
-  return totals;
 }
 
 function stashCovers(materials: MaterialRow[]): boolean {
