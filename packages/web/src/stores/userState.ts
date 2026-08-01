@@ -2,6 +2,7 @@ import {
   STASH_SCHEMA_VERSION,
   USER_STATE_SCHEMA_VERSION,
   UserStateStore,
+  type ColorFamily,
   type PatternUserState,
 } from "@amigurumi/schema";
 import { defineStore } from "pinia";
@@ -13,7 +14,7 @@ function defaultState(): UserStateStore {
   return {
     version: USER_STATE_SCHEMA_VERSION,
     patterns: {},
-    stash: { version: STASH_SCHEMA_VERSION, onHandYdsByFamily: {} },
+    stash: { version: STASH_SCHEMA_VERSION, onHandYdsByFamily: {}, quickHaveFamilies: [] },
   };
 }
 
@@ -63,5 +64,15 @@ export const useUserStateStore = defineStore("userState", () => {
     state.patterns[id] = { ...patternState(id), notes };
   }
 
-  return { state, patternState, setHaveIt, setCompleted, setNotes };
+  function toggleQuickHave(family: ColorFamily) {
+    const families = state.stash.quickHaveFamilies;
+    const index = families.indexOf(family);
+    if (index === -1) {
+      families.push(family);
+    } else {
+      families.splice(index, 1);
+    }
+  }
+
+  return { state, patternState, setHaveIt, setCompleted, setNotes, toggleQuickHave };
 });

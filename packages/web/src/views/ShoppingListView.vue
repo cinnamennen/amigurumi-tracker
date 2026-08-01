@@ -40,6 +40,7 @@ const shoppingList = computed<ShoppingRow[]>(() => {
 
   const rows: ShoppingRow[] = [];
   for (const [family, needed] of Object.entries(totalNeeded) as [ColorFamily, number][]) {
+    if (userState.state.stash.quickHaveFamilies.includes(family)) continue;
     const onHand = userState.state.stash.onHandYdsByFamily[family] ?? 0;
     const deficit = needed - onHand;
     if (deficit > 0) rows.push({ family, needed, onHand, deficit });

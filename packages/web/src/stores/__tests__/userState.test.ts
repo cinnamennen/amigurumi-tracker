@@ -17,7 +17,11 @@ describe("default state", () => {
     const store = useUserStateStore();
     expect(store.state.version).toBe(USER_STATE_SCHEMA_VERSION);
     expect(store.state.patterns).toEqual({});
-    expect(store.state.stash).toEqual({ version: STASH_SCHEMA_VERSION, onHandYdsByFamily: {} });
+    expect(store.state.stash).toEqual({
+      version: STASH_SCHEMA_VERSION,
+      onHandYdsByFamily: {},
+      quickHaveFamilies: [],
+    });
   });
 
   it("returns a default (not-have-it, not-completed, empty notes) state for an unknown pattern id", () => {
@@ -68,6 +72,23 @@ describe("mutations persist to localStorage", () => {
     const persisted = JSON.parse(localStorage.getItem(STORAGE_KEY)!);
     expect(persisted.stash.onHandYdsByFamily.Brown).toBe(42);
   });
+
+  it("toggleQuickHave adds and then removes a family, persisting to localStorage", async () => {
+    const store = useUserStateStore();
+    store.toggleQuickHave("Red");
+    await nextTick();
+
+    expect(store.state.stash.quickHaveFamilies).toEqual(["Red"]);
+    let persisted = JSON.parse(localStorage.getItem(STORAGE_KEY)!);
+    expect(persisted.stash.quickHaveFamilies).toEqual(["Red"]);
+
+    store.toggleQuickHave("Red");
+    await nextTick();
+
+    expect(store.state.stash.quickHaveFamilies).toEqual([]);
+    persisted = JSON.parse(localStorage.getItem(STORAGE_KEY)!);
+    expect(persisted.stash.quickHaveFamilies).toEqual([]);
+  });
 });
 
 describe("loading existing localStorage state", () => {
@@ -84,6 +105,20 @@ describe("loading existing localStorage state", () => {
     const store = useUserStateStore();
     expect(store.patternState("walter-animal")).toEqual({ haveIt: true, completed: false, notes: "hi" });
     expect(store.state.stash.onHandYdsByFamily.Brown).toBe(10);
+  });
+
+  it("backfills quickHaveFamilies to an empty array for state saved before that field existed", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        version: USER_STATE_SCHEMA_VERSION,
+        patterns: {},
+        stash: { version: STASH_SCHEMA_VERSION, onHandYdsByFamily: {} },
+      }),
+    );
+
+    const store = useUserStateStore();
+    expect(store.state.stash.quickHaveFamilies).toEqual([]);
   });
 
   it("falls back to default state when localStorage holds a valid-JSON but wrong-shaped value", () => {

@@ -19,9 +19,11 @@ function isCompleted(p: Pattern): boolean {
 
 function stashCovers(materials: MaterialRow[]): boolean {
   const needed = neededByFamily(materials);
-  return Object.entries(needed).every(
-    ([family, yds]) => (userState.state.stash.onHandYdsByFamily[family as ColorFamily] ?? 0) >= yds,
-  );
+  return Object.entries(needed).every(([family, yds]) => {
+    const colorFamily = family as ColorFamily;
+    if (userState.state.stash.quickHaveFamilies.includes(colorFamily)) return true;
+    return (userState.state.stash.onHandYdsByFamily[colorFamily] ?? 0) >= yds;
+  });
 }
 
 // Qualifier-bearing materials ("Dark Brown") can't be confirmed against a

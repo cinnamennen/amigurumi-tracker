@@ -101,6 +101,11 @@ export const STASH_SCHEMA_VERSION = 1;
 export const Stash = z.object({
   version: z.literal(STASH_SCHEMA_VERSION),
   onHandYdsByFamily: z.record(ColorFamily, z.number().nonnegative()),
+  // "I have some red and green" without measuring yardage -- a faster path
+  // than the per-family yds table for the common case of just wanting a
+  // quick "what can I make" answer. Any family listed here is treated as
+  // fully on-hand regardless of onHandYdsByFamily.
+  quickHaveFamilies: z.array(ColorFamily).default([]),
 });
 export type Stash = z.infer<typeof Stash>;
 

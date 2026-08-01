@@ -9,17 +9,48 @@ function onInput(family: (typeof families)[number], value: string) {
   const yds = Number.parseFloat(value);
   userState.state.stash.onHandYdsByFamily[family] = Number.isFinite(yds) ? yds : 0;
 }
+
+function isQuickHave(family: (typeof families)[number]): boolean {
+  return userState.state.stash.quickHaveFamilies.includes(family);
+}
 </script>
 
 <template>
   <h1>Yarn Stash</h1>
-  <p class="intro">How many yards of each color family do you have on hand?</p>
+
+  <h2>Quick check</h2>
+  <p class="intro">
+    Just want a fast "what can I make" answer? Click the colors you have -- no need to measure
+    yardage. These count as fully on-hand for the "What Can I Make" page.
+  </p>
+  <div class="chips">
+    <button
+      v-for="family in families"
+      :key="family"
+      type="button"
+      class="chip"
+      :class="{ active: isQuickHave(family) }"
+      :aria-pressed="isQuickHave(family)"
+      @click="userState.toggleQuickHave(family)"
+    >
+      <span class="swatch" :data-family="family" aria-hidden="true"></span>
+      {{ family }}
+    </button>
+  </div>
+
+  <h2>Exact yardage</h2>
+  <p class="intro">
+    For a more precise shopping list, enter how many yards of each color family you have on hand.
+  </p>
   <div class="card">
     <table>
       <tr v-for="family in families" :key="family">
         <td class="family-cell">
           <span class="swatch" :data-family="family" aria-hidden="true"></span>
           {{ family }}
+          <span v-if="isQuickHave(family)" class="badge" title="Also marked as a quick check -- treated as fully on-hand regardless of this amount.">
+            quick check
+          </span>
         </td>
         <td>
           <input
@@ -41,9 +72,59 @@ function onInput(family: (typeof families)[number], value: string) {
     margin-top: 0;
   }
 
+  h2 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0.25rem;
+  }
+
   .intro {
     color: var(--color-text-muted);
     margin-top: 0;
+    max-width: 36rem;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    font: inherit;
+    font-weight: 600;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition:
+      background-color var(--transition-fast),
+      border-color var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .chip:hover {
+    border-color: var(--color-accent);
+  }
+
+  .chip.active {
+    background: var(--color-accent-soft);
+    border-color: var(--color-accent);
+    color: var(--color-accent-strong);
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.0625rem 0.5rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
+    font-weight: 600;
   }
 
   .card {
