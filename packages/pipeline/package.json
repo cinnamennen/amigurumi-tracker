@@ -7,7 +7,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "build:catalog": "tsx src/buildCatalog.ts",
-    "generate:sewing-signal": "tsx src/generateSewingSignal.ts"
+    "generate:sewing-signal": "tsx src/generateSewingSignal.ts",
+    "match:catalog": "tsx src/sourceCatalogMatch.ts"
   },
   "dependencies": {
     "@amigurumi/schema": "workspace:*",

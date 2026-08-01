@@ -1,0 +1,53 @@
+name: Match source catalog images
+
+# thewoobles.com rate-limits repeated automated requests from a single IP,
+# which reliably blocks this from the dev sandbox that normally does this
+# kind of work. GitHub-hosted runners get a fresh IP each run, so this is
+# meant to be triggered manually here instead.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.29.3
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm --filter @amigurumi/pipeline run build:catalog
+
+      - run: pnpm --filter @amigurumi/pipeline run match:catalog -- --verify
+
+      - run: pnpm --filter @amigurumi/pipeline run build:catalog
+
+      - run: pnpm run typecheck
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: match-catalog-update
+          title: "Update source catalog image/purchase-link matches"
+          commit-message: "Update sourceCatalogMatch.json and regenerated patterns.json"
+          body: |
+            Automated run of `pnpm --filter @amigurumi/pipeline run match:catalog`.
+
+            Check the `ambiguous`/`unmatched` lists in
+            `packages/pipeline/data/sourceCatalogMatch.json` for anything
+            that needs a manual entry in `sourceCatalogOverrides.json`.
+          add-paths: |
+            packages/pipeline/data/sourceCatalogMatch.json
+            packages/web/src/data/patterns.json
