@@ -9,18 +9,19 @@ import { neededByFamily } from "../utils/materialNeeds";
 const patterns = patternsJson as Pattern[];
 const userState = useUserStateStore();
 
-function isHaveIt(p: Pattern): boolean {
-  return userState.patternState(p.id).haveIt || p.haveIt;
-}
-
 function isCompleted(p: Pattern): boolean {
   return userState.patternState(p.id).completed || p.completed;
 }
 
-// Patterns the user actually plans to make: have the pattern, haven't made
-// it yet. (Not "everything not completed" -- that's all 654 patterns and
-// not a meaningful shopping list.)
-const inProgress = computed(() => patterns.filter((p) => isHaveIt(p) && !isCompleted(p)));
+function isWantToMake(p: Pattern): boolean {
+  return userState.patternState(p.id).wantToMake;
+}
+
+// Patterns the user actually plans to make, driven by the explicit "want to
+// make" flag rather than haveIt -- haveIt && !completed is every owned,
+// unmade pattern (all 654 of them by default), not a meaningful shopping
+// list.
+const inProgress = computed(() => patterns.filter((p) => isWantToMake(p) && !isCompleted(p)));
 
 interface ShoppingRow {
   family: ColorFamily;
@@ -57,7 +58,10 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
     Yardage still needed, after your stash, across the {{ inProgress.length }} pattern{{
       inProgress.length === 1 ? "" : "s"
     }}
-    you have and haven't made yet.
+    you've marked "want to make".
+  </p>
+  <p v-if="inProgress.length === 0" class="empty">
+    Nothing marked "want to make" yet -- toggle it on a pattern's detail page to add it here.
   </p>
 
   <table v-if="shoppingList.length > 0" class="list">
@@ -87,9 +91,8 @@ const totalYardsToBuy = computed(() => shoppingList.value.reduce((sum, row) => s
       </tr>
     </tfoot>
   </table>
-  <p v-else class="empty">
-    Nothing to buy right now -- either mark some patterns "have it", or your stash already covers
-    everything you have and haven't made yet.
+  <p v-else-if="inProgress.length > 0" class="empty">
+    Nothing to buy right now -- your stash already covers everything you've marked "want to make".
   </p>
 </template>
 

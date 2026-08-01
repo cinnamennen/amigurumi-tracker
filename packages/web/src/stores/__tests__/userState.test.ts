@@ -24,9 +24,14 @@ describe("default state", () => {
     });
   });
 
-  it("returns a default (not-have-it, not-completed, empty notes) state for an unknown pattern id", () => {
+  it("returns a default (not-have-it, not-completed, empty notes, not-want-to-make) state for an unknown pattern id", () => {
     const store = useUserStateStore();
-    expect(store.patternState("some-pattern")).toEqual({ haveIt: false, completed: false, notes: "" });
+    expect(store.patternState("some-pattern")).toEqual({
+      haveIt: false,
+      completed: false,
+      notes: "",
+      wantToMake: false,
+    });
   });
 });
 
@@ -61,7 +66,18 @@ describe("mutations persist to localStorage", () => {
       haveIt: true,
       completed: false,
       notes: "needs a bigger nose",
+      wantToMake: false,
     });
+  });
+
+  it("setWantToMake updates state and writes through to localStorage", async () => {
+    const store = useUserStateStore();
+    store.setWantToMake("walter-animal", true);
+    await nextTick();
+
+    expect(store.patternState("walter-animal").wantToMake).toBe(true);
+    const persisted = JSON.parse(localStorage.getItem(STORAGE_KEY)!);
+    expect(persisted.patterns["walter-animal"].wantToMake).toBe(true);
   });
 
   it("stash yardage mutations persist to localStorage", async () => {
@@ -103,8 +119,27 @@ describe("loading existing localStorage state", () => {
     );
 
     const store = useUserStateStore();
-    expect(store.patternState("walter-animal")).toEqual({ haveIt: true, completed: false, notes: "hi" });
+    expect(store.patternState("walter-animal")).toEqual({
+      haveIt: true,
+      completed: false,
+      notes: "hi",
+      wantToMake: false,
+    });
     expect(store.state.stash.onHandYdsByFamily.Brown).toBe(10);
+  });
+
+  it("backfills wantToMake to false for pattern state saved before that field existed", () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        version: USER_STATE_SCHEMA_VERSION,
+        patterns: { "walter-animal": { haveIt: true, completed: false, notes: "hi" } },
+        stash: { version: STASH_SCHEMA_VERSION, onHandYdsByFamily: {} },
+      }),
+    );
+
+    const store = useUserStateStore();
+    expect(store.patternState("walter-animal").wantToMake).toBe(false);
   });
 
   it("backfills quickHaveFamilies to an empty array for state saved before that field existed", () => {

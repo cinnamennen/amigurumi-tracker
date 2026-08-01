@@ -42,6 +42,14 @@ const userState = useUserStateStore();
         />
         Made it
       </label>
+      <label>
+        <input
+          type="checkbox"
+          :checked="userState.patternState(pattern.id).wantToMake"
+          @change="userState.setWantToMake(pattern.id, ($event.target as HTMLInputElement).checked)"
+        />
+        Want to make
+      </label>
     </div>
 
     <h2>Materials</h2>

@@ -34,7 +34,7 @@ function loadState(): UserStateStore {
 }
 
 function defaultPatternState(): PatternUserState {
-  return { haveIt: false, completed: false, notes: "" };
+  return { haveIt: false, completed: false, notes: "", wantToMake: false };
 }
 
 export const useUserStateStore = defineStore("userState", () => {
@@ -64,6 +64,10 @@ export const useUserStateStore = defineStore("userState", () => {
     state.patterns[id] = { ...patternState(id), notes };
   }
 
+  function setWantToMake(id: string, wantToMake: boolean) {
+    state.patterns[id] = { ...patternState(id), wantToMake };
+  }
+
   function toggleQuickHave(family: ColorFamily) {
     const families = state.stash.quickHaveFamilies;
     const index = families.indexOf(family);
@@ -74,5 +78,5 @@ export const useUserStateStore = defineStore("userState", () => {
     }
   }
 
-  return { state, patternState, setHaveIt, setCompleted, setNotes, toggleQuickHave };
+  return { state, patternState, setHaveIt, setCompleted, setNotes, setWantToMake, toggleQuickHave };
 });

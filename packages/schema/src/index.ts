@@ -93,6 +93,11 @@ export const PatternUserState = z.object({
   haveIt: z.boolean(),
   completed: z.boolean(),
   notes: z.string(),
+  // Distinct from haveIt: haveIt is "I own this pattern", wantToMake is "this
+  // is on my near-term to-do list". The Shopping List aggregates yardage
+  // needed across wantToMake patterns, not every owned-but-unmade one --
+  // otherwise it's the whole 650+ pattern collection's worth of yarn.
+  wantToMake: z.boolean().default(false),
 });
 export type PatternUserState = z.infer<typeof PatternUserState>;
 

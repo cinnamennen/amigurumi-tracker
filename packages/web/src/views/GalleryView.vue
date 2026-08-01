@@ -36,9 +36,10 @@ const skillLevel = ref(queryString("skill"));
 const sewingAmount = ref(queryString("sewing"));
 const haveItOnly = ref(queryString("haveIt") === "1");
 const completedOnly = ref(queryString("completed") === "1");
+const wantToMakeOnly = ref(queryString("wantToMake") === "1");
 const sort = ref<SortOrder>(SORT_ORDERS.includes(queryString("sort") as SortOrder) ? (queryString("sort") as SortOrder) : "name");
 
-watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, sort], () => {
+watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wantToMakeOnly, sort], () => {
   const query: Record<string, string> = {};
   if (search.value) query.q = search.value;
   if (category.value) query.category = category.value;
@@ -46,6 +47,7 @@ watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, so
   if (sewingAmount.value) query.sewing = sewingAmount.value;
   if (haveItOnly.value) query.haveIt = "1";
   if (completedOnly.value) query.completed = "1";
+  if (wantToMakeOnly.value) query.wantToMake = "1";
   if (sort.value !== "name") query.sort = sort.value;
   router.replace({ query });
 });
@@ -56,6 +58,10 @@ function isHaveIt(p: Pattern): boolean {
 
 function isCompleted(p: Pattern): boolean {
   return userState.patternState(p.id).completed || p.completed;
+}
+
+function isWantToMake(p: Pattern): boolean {
+  return userState.patternState(p.id).wantToMake;
 }
 
 function percent(count: number, total: number): number {
@@ -83,6 +89,7 @@ const filtered = computed(() => {
     if (sewingAmount.value && p.sewingAmount !== sewingAmount.value) return false;
     if (haveItOnly.value && !isHaveIt(p)) return false;
     if (completedOnly.value && !isCompleted(p)) return false;
+    if (wantToMakeOnly.value && !isWantToMake(p)) return false;
     return true;
   });
   const sorted = [...result];
@@ -147,6 +154,10 @@ const filtered = computed(() => {
       <input id="completed-only" v-model="completedOnly" type="checkbox" />
       Made it
     </label>
+    <label class="field checkbox">
+      <input id="want-to-make-only" v-model="wantToMakeOnly" type="checkbox" />
+      Want to make
+    </label>
     <div class="field">
       <label for="sort">Sort by</label>
       <select id="sort" v-model="sort">
@@ -175,6 +186,7 @@ const filtered = computed(() => {
       <p class="badges">
         <span v-if="isHaveIt(pattern)" class="badge">Have it</span>
         <span v-if="isCompleted(pattern)" class="badge done">Made it</span>
+        <span v-if="isWantToMake(pattern)" class="badge want">Want to make</span>
       </p>
     </RouterLink>
     <p v-if="filtered.length === 0" class="empty">No patterns match the current filters.</p>
@@ -377,5 +389,10 @@ const filtered = computed(() => {
 
   .badge.done {
     background: var(--color-success-bg);
+  }
+
+  .badge.want {
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
   }
 </style>
