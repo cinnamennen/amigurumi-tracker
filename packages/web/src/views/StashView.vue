@@ -43,16 +43,16 @@ function isQuickHave(family: (typeof families)[number]): boolean {
     For a more precise shopping list, enter how many yards of each color family you have on hand.
   </p>
   <div class="card">
-    <table>
-      <tr v-for="family in families" :key="family">
-        <td class="family-cell">
+    <div class="grid">
+      <div v-for="family in families" :key="family" class="row">
+        <div class="family-cell">
           <span class="swatch" :data-family="family" aria-hidden="true"></span>
           {{ family }}
           <span v-if="isQuickHave(family)" class="badge" title="Also marked as a quick check -- treated as fully on-hand regardless of this amount.">
             quick check
           </span>
-        </td>
-        <td>
+        </div>
+        <div class="amount-cell">
           <input
             :id="`stash-${family}`"
             type="number"
@@ -61,9 +61,9 @@ function isQuickHave(family: (typeof families)[number]): boolean {
             @input="onInput(family, ($event.target as HTMLInputElement).value)"
           />
           <label :for="`stash-${family}`" class="unit">yds</label>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -128,7 +128,6 @@ function isQuickHave(family: (typeof families)[number]): boolean {
   }
 
   .card {
-    display: inline-block;
     padding: 1rem 1.25rem;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -136,23 +135,38 @@ function isQuickHave(family: (typeof families)[number]): boolean {
     box-shadow: var(--shadow-sm);
   }
 
-  table {
-    border-collapse: collapse;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0.25rem 1.5rem;
   }
 
-  tr:hover td {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.375rem 0.5rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .row:hover {
     background: var(--color-bg);
-  }
-
-  td {
-    padding: 0.375rem 0.75rem 0.375rem 0;
   }
 
   .family-cell {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.375rem;
     font-weight: 500;
+    min-width: 0;
+  }
+
+  .amount-cell {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   .swatch {
