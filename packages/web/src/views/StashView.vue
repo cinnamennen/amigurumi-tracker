@@ -136,6 +136,16 @@ function onInput(family: (typeof families)[number], value: string) {
     border-radius: var(--radius-sm);
     font: inherit;
     transition: border-color var(--transition-fast);
+    /* Without this, Chrome's native spin-button arrows only render on
+       hover/focus, stealing space from the digits and shifting the "yds"
+       label -- a visible jump every time you mouse over a row. */
+    appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 
   input:hover {
