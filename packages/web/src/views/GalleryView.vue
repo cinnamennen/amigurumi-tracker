@@ -38,8 +38,10 @@ const haveItOnly = ref(queryString("haveIt") === "1");
 const completedOnly = ref(queryString("completed") === "1");
 const wantToMakeOnly = ref(queryString("wantToMake") === "1");
 const sort = ref<SortOrder>(SORT_ORDERS.includes(queryString("sort") as SortOrder) ? (queryString("sort") as SortOrder) : "name");
+const initialTags = queryString("tags");
+const activeTags = ref<string[]>(initialTags ? initialTags.split(",") : []);
 
-watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wantToMakeOnly, sort], () => {
+watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wantToMakeOnly, sort, activeTags], () => {
   const query: Record<string, string> = {};
   if (search.value) query.q = search.value;
   if (category.value) query.category = category.value;
@@ -48,9 +50,18 @@ watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wa
   if (haveItOnly.value) query.haveIt = "1";
   if (completedOnly.value) query.completed = "1";
   if (wantToMakeOnly.value) query.wantToMake = "1";
+  if (activeTags.value.length > 0) query.tags = activeTags.value.join(",");
   if (sort.value !== "name") query.sort = sort.value;
   router.replace({ query });
-});
+}, { deep: true });
+
+function addTagFilter(tag: string) {
+  if (!activeTags.value.includes(tag)) activeTags.value.push(tag);
+}
+
+function removeTagFilter(tag: string) {
+  activeTags.value = activeTags.value.filter((t) => t !== tag);
+}
 
 function isHaveIt(p: Pattern): boolean {
   return userState.patternState(p.id).haveIt || p.haveIt;
@@ -90,6 +101,7 @@ const filtered = computed(() => {
     if (haveItOnly.value && !isHaveIt(p)) return false;
     if (completedOnly.value && !isCompleted(p)) return false;
     if (wantToMakeOnly.value && !isWantToMake(p)) return false;
+    if (activeTags.value.length > 0 && !activeTags.value.every((tag) => p.collectionTags.includes(tag))) return false;
     return true;
   });
   const sorted = [...result];
@@ -167,6 +179,20 @@ const filtered = computed(() => {
     </div>
   </form>
 
+  <div v-if="activeTags.length > 0" class="active-tags">
+    <span class="active-tags-label">Tags:</span>
+    <button
+      v-for="tag in activeTags"
+      :key="tag"
+      type="button"
+      class="active-tag"
+      :aria-label="`Remove tag filter ${tag}`"
+      @click="removeTagFilter(tag)"
+    >
+      {{ tag }} <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
   <div class="grid">
     <RouterLink
       v-for="pattern in filtered"
@@ -181,7 +207,17 @@ const filtered = computed(() => {
       <h3>{{ pattern.name }}</h3>
       <p class="meta">{{ pattern.category }}<span v-if="pattern.subcategory"> · {{ pattern.subcategory }}</span></p>
       <p v-if="pattern.collectionTags.length" class="tags">
-        <span v-for="tag in pattern.collectionTags" :key="tag" class="tag">{{ tag }}</span>
+        <button
+          v-for="tag in pattern.collectionTags"
+          :key="tag"
+          type="button"
+          class="tag"
+          :class="{ active: activeTags.includes(tag) }"
+          :aria-label="`Filter by tag ${tag}`"
+          @click.stop.prevent="addTagFilter(tag)"
+        >
+          {{ tag }}
+        </button>
       </p>
       <p class="badges">
         <span v-if="isHaveIt(pattern)" class="badge">Have it</span>
@@ -367,11 +403,61 @@ const filtered = computed(() => {
   }
 
   .tag {
+    font: inherit;
     font-size: 0.6875rem;
     padding: 0.0625rem 0.375rem;
+    border: none;
     border-radius: var(--radius-pill);
     background: var(--color-tag-bg);
     color: var(--color-text-muted);
+    cursor: pointer;
+    transition:
+      background-color var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .tag:hover {
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
+  }
+
+  .tag.active {
+    background: var(--color-accent);
+    color: white;
+  }
+
+  .active-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: -0.5rem 0 1.5rem;
+  }
+
+  .active-tags-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  .active-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-pill);
+    background: var(--color-accent-soft);
+    color: var(--color-accent-strong);
+    cursor: pointer;
+  }
+
+  .active-tag:hover {
+    background: var(--color-accent);
+    color: white;
   }
 
   .badges {
