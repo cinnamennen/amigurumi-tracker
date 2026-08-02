@@ -6,11 +6,13 @@ export const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: "/", name: "gallery", component: () => import("../views/GalleryView.vue") },
+    // Pattern detail is a modal (see App.vue + PatternDetailModal.vue) driven
+    // by a `?pattern=<id>` query param on whatever page is underneath, not a
+    // route of its own -- this old path is kept as a redirect so existing
+    // bookmarks/shared links still land on the right pattern.
     {
       path: "/patterns/:id",
-      name: "pattern-detail",
-      component: () => import("../views/PatternDetailView.vue"),
-      props: true,
+      redirect: (to) => ({ path: "/", query: { pattern: to.params.id as string } }),
     },
     { path: "/stash", name: "stash", component: () => import("../views/StashView.vue") },
     {

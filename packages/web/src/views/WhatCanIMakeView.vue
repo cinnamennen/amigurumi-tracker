@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ColorFamily, MaterialRow, Pattern } from "@amigurumi/schema";
 import { computed } from "vue";
+import { useRoute } from "vue-router";
 
 import patternsJson from "../data/patterns.json";
 import { useUserStateStore } from "../stores/userState";
@@ -8,6 +9,7 @@ import { neededByFamily } from "../utils/materialNeeds";
 
 const patterns = patternsJson as Pattern[];
 const userState = useUserStateStore();
+const route = useRoute();
 
 function isHaveIt(p: Pattern): boolean {
   return userState.patternState(p.id).haveIt || p.haveIt;
@@ -50,7 +52,7 @@ const makeable = computed<Makeable[]>(() =>
   <p>Patterns you have and haven't made yet, whose materials fit your current stash.</p>
   <ul class="list">
     <li v-for="{ pattern, verifyShade } in makeable" :key="pattern.id">
-      <RouterLink :to="{ name: 'pattern-detail', params: { id: pattern.id } }">{{ pattern.name }}</RouterLink>
+      <RouterLink :to="{ path: route.path, query: { ...route.query, pattern: pattern.id } }">{{ pattern.name }}</RouterLink>
       <span v-if="verifyShade" class="badge verify" title="One or more materials specify a shade (e.g. 'Dark Brown') — check it matches your stash.">
         verify shade
       </span>

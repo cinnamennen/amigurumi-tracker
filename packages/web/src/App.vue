@@ -1,4 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed, defineAsyncComponent } from "vue";
+import { useRoute, useRouter } from "vue-router";
+
+// Lazy -- a static import here would pull patterns.json (and everything
+// that imports it) into the eager main bundle for every page, including
+// ones like Stash that never touch pattern data otherwise.
+const PatternDetailModal = defineAsyncComponent(() => import("./components/PatternDetailModal.vue"));
+
+const route = useRoute();
+const router = useRouter();
+
+// Pattern detail is a modal layered over whatever page is underneath,
+// driven by a query param rather than its own route -- so opening one
+// doesn't lose the Gallery's scroll position or active filters.
+const selectedPatternId = computed(() => {
+  const value = route.query.pattern;
+  return typeof value === "string" ? value : null;
+});
+
+function closeModal() {
+  const { pattern: _pattern, ...rest } = route.query;
+  router.push({ path: route.path, query: rest });
+}
+</script>
 
 <template>
   <header class="nav">
@@ -13,6 +37,7 @@
   <main>
     <RouterView />
   </main>
+  <PatternDetailModal v-if="selectedPatternId" :id="selectedPatternId" @close="closeModal" />
 </template>
 
 <style>

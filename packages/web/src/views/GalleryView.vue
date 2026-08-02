@@ -246,7 +246,7 @@ const filtered = computed(() => {
     <RouterLink
       v-for="pattern in filtered"
       :key="pattern.id"
-      :to="{ name: 'pattern-detail', params: { id: pattern.id } }"
+      :to="{ path: route.path, query: { ...route.query, pattern: pattern.id } }"
       class="card"
     >
       <div class="thumb" aria-hidden="true">
