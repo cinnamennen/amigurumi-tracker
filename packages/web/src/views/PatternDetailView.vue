@@ -55,7 +55,7 @@ const userState = useUserStateStore();
     <h2>Materials</h2>
     <ul class="materials">
       <li v-for="(m, i) in pattern.materials" :key="i">
-        <span class="color-swatch" :data-family="m.colorFamily" aria-hidden="true"></span>
+        <span class="swatch" :data-family="m.colorFamily" aria-hidden="true"></span>
         {{ m.colorRaw }}
         <span class="badge family">{{ m.colorFamily }}</span>
         <span v-if="m.qualifier" class="badge qualifier">{{ m.qualifier }}</span>
@@ -167,64 +167,6 @@ const userState = useUserStateStore();
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  /* Actual swatch fill per color family -- previously the data-family
-     attribute was set but nothing rendered it, so every swatch was just an
-     empty ring regardless of color. */
-  .color-swatch {
-    display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
-    border-radius: 50%;
-    border: 1px solid var(--color-border-strong);
-    background: var(--swatch-color, var(--color-neutral-soft));
-  }
-
-  .color-swatch[data-family="Black"] {
-    --swatch-color: #2b2320;
-  }
-  .color-swatch[data-family="White"] {
-    --swatch-color: #ffffff;
-  }
-  .color-swatch[data-family="Gray"] {
-    --swatch-color: #9a9086;
-  }
-  .color-swatch[data-family="Brown"] {
-    --swatch-color: #6b4a35;
-  }
-  .color-swatch[data-family="Tan"] {
-    --swatch-color: #d2b48c;
-  }
-  .color-swatch[data-family="Cream"] {
-    --swatch-color: #f5edd8;
-  }
-  .color-swatch[data-family="Red"] {
-    --swatch-color: #c0392b;
-  }
-  .color-swatch[data-family="Pink"] {
-    --swatch-color: #e28fb0;
-  }
-  .color-swatch[data-family="Orange"] {
-    --swatch-color: #e08324;
-  }
-  .color-swatch[data-family="Yellow"] {
-    --swatch-color: #e8c547;
-  }
-  .color-swatch[data-family="Green"] {
-    --swatch-color: #5c8a4a;
-  }
-  .color-swatch[data-family="Blue"] {
-    --swatch-color: #4a7bab;
-  }
-  .color-swatch[data-family="Purple"] {
-    --swatch-color: #8a5fa8;
-  }
-  .color-swatch[data-family="Gold"] {
-    --swatch-color: #c9a227;
-  }
-  .color-swatch[data-family="Silver"] {
-    --swatch-color: #b8b8b8;
   }
 
   .badge {

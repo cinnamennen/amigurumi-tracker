@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Pattern, SewingAmount, SkillLevel } from "@amigurumi/schema";
+import { ColorFamily, type Pattern, type SewingAmount, type SkillLevel } from "@amigurumi/schema";
 import { computed, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
@@ -12,6 +12,7 @@ const userState = useUserStateStore();
 const categories = [...new Set(patterns.map((p) => p.category))].sort();
 const skillLevels = [...new Set(patterns.map((p) => p.skillLevel))].sort() as SkillLevel[];
 const sewingAmounts = [...new Set(patterns.map((p) => p.sewingAmount))].sort() as SewingAmount[];
+const colorFamilies = ColorFamily.options;
 
 type SortOrder = "name" | "category";
 const SORT_ORDERS: SortOrder[] = ["name", "category"];
@@ -40,20 +41,27 @@ const wantToMakeOnly = ref(queryString("wantToMake") === "1");
 const sort = ref<SortOrder>(SORT_ORDERS.includes(queryString("sort") as SortOrder) ? (queryString("sort") as SortOrder) : "name");
 const initialTags = queryString("tags");
 const activeTags = ref<string[]>(initialTags ? initialTags.split(",") : []);
+const initialColors = queryString("colors");
+const activeColors = ref<string[]>(initialColors ? initialColors.split(",") : []);
 
-watch([search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wantToMakeOnly, sort, activeTags], () => {
-  const query: Record<string, string> = {};
-  if (search.value) query.q = search.value;
-  if (category.value) query.category = category.value;
-  if (skillLevel.value) query.skill = skillLevel.value;
-  if (sewingAmount.value) query.sewing = sewingAmount.value;
-  if (haveItOnly.value) query.haveIt = "1";
-  if (completedOnly.value) query.completed = "1";
-  if (wantToMakeOnly.value) query.wantToMake = "1";
-  if (activeTags.value.length > 0) query.tags = activeTags.value.join(",");
-  if (sort.value !== "name") query.sort = sort.value;
-  router.replace({ query });
-}, { deep: true });
+watch(
+  [search, category, skillLevel, sewingAmount, haveItOnly, completedOnly, wantToMakeOnly, sort, activeTags, activeColors],
+  () => {
+    const query: Record<string, string> = {};
+    if (search.value) query.q = search.value;
+    if (category.value) query.category = category.value;
+    if (skillLevel.value) query.skill = skillLevel.value;
+    if (sewingAmount.value) query.sewing = sewingAmount.value;
+    if (haveItOnly.value) query.haveIt = "1";
+    if (completedOnly.value) query.completed = "1";
+    if (wantToMakeOnly.value) query.wantToMake = "1";
+    if (activeTags.value.length > 0) query.tags = activeTags.value.join(",");
+    if (activeColors.value.length > 0) query.colors = activeColors.value.join(",");
+    if (sort.value !== "name") query.sort = sort.value;
+    router.replace({ query });
+  },
+  { deep: true },
+);
 
 function addTagFilter(tag: string) {
   if (!activeTags.value.includes(tag)) activeTags.value.push(tag);
@@ -61,6 +69,18 @@ function addTagFilter(tag: string) {
 
 function removeTagFilter(tag: string) {
   activeTags.value = activeTags.value.filter((t) => t !== tag);
+}
+
+function toggleColorFilter(family: string) {
+  if (activeColors.value.includes(family)) {
+    activeColors.value = activeColors.value.filter((c) => c !== family);
+  } else {
+    activeColors.value.push(family);
+  }
+}
+
+function usesColor(p: Pattern, family: string): boolean {
+  return p.materials.some((m) => m.colorFamily === family);
 }
 
 function isHaveIt(p: Pattern): boolean {
@@ -102,6 +122,7 @@ const filtered = computed(() => {
     if (completedOnly.value && !isCompleted(p)) return false;
     if (wantToMakeOnly.value && !isWantToMake(p)) return false;
     if (activeTags.value.length > 0 && !activeTags.value.every((tag) => p.collectionTags.includes(tag))) return false;
+    if (activeColors.value.length > 0 && !activeColors.value.every((family) => usesColor(p, family))) return false;
     return true;
   });
   const sorted = [...result];
@@ -176,6 +197,23 @@ const filtered = computed(() => {
         <option value="name">Name (A–Z)</option>
         <option value="category">Category, then name</option>
       </select>
+    </div>
+    <div class="field colors-field">
+      <span class="colors-label">Colors used (all must match)</span>
+      <div class="color-chips">
+        <button
+          v-for="family in colorFamilies"
+          :key="family"
+          type="button"
+          class="chip"
+          :class="{ active: activeColors.includes(family) }"
+          :aria-pressed="activeColors.includes(family)"
+          @click="toggleColorFilter(family)"
+        >
+          <span class="swatch" :data-family="family" aria-hidden="true"></span>
+          {{ family }}
+        </button>
+      </div>
     </div>
   </form>
 
@@ -329,6 +367,49 @@ const filtered = computed(() => {
   .field input:hover,
   .field select:hover {
     border-color: var(--color-accent);
+  }
+
+  .colors-field {
+    flex-basis: 100%;
+  }
+
+  .colors-label {
+    font-weight: 600;
+  }
+
+  .color-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition:
+      background-color var(--transition-fast),
+      border-color var(--transition-fast),
+      color var(--transition-fast);
+  }
+
+  .chip:hover {
+    border-color: var(--color-accent);
+  }
+
+  .chip.active {
+    background: var(--color-accent-soft);
+    border-color: var(--color-accent);
+    color: var(--color-accent-strong);
   }
 
   .grid {
