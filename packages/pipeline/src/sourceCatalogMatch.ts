@@ -119,6 +119,12 @@ const STOPWORDS = new Set([
   "mini",
   "edition",
   "holiday",
+  // Almost every Woobles product and pattern name starts with "Tiny" -- it
+  // carries no discriminating power, but without stripping it, a 2-token
+  // pattern name like "Tiny Bowtie" matching just "tiny" alone scores 0.5
+  // and clears the ambiguous-match threshold against literally any other
+  // "Tiny ___" product on the storefront.
+  "tiny",
 ]);
 
 function normalize(text: string): string[] {
@@ -138,11 +144,21 @@ function tokenScore(patternTokens: string[], productTokens: string[]): number {
   return overlap / patternTokens.length;
 }
 
+// A handful of pattern names carry a parenthetical qualifier -- e.g. "Tiny
+// Backpack (Safari)", "Hubert (baby toy)" -- that describes a variant or
+// theme rather than being part of the product's actual name on the
+// storefront. Treated as a required token like any other word, it forces a
+// spurious tie against products that happen to share just the qualifier
+// (e.g. "Tiny Safari Hat") instead of the actual item.
+function stripParentheticalQualifier(name: string): string {
+  return name.replace(/\([^)]*\)/g, " ");
+}
+
 function matchPattern(
   pattern: PatternRow,
   products: ShopifyProduct[],
 ): { result: MatchResult } | { ambiguous: AmbiguousCandidate[] } | { unmatched: true } {
-  const patternTokens = normalize(pattern.name);
+  const patternTokens = normalize(stripParentheticalQualifier(pattern.name));
   const scored = products
     .map((product) => ({ product, score: tokenScore(patternTokens, normalize(product.title)) }))
     .filter((s) => s.score > 0)
