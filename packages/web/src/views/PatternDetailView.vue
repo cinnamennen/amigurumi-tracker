@@ -88,8 +88,12 @@ const userState = useUserStateStore();
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8rem;
-    width: 8rem;
+    /* Real product photos are square -- size the thumb off that ratio
+       instead of a small fixed 8rem box so the actual photo (not just a
+       recognizable letter placeholder) is legible on the detail page. */
+    width: 100%;
+    max-width: 16rem;
+    aspect-ratio: 1 / 1;
     margin: 0.5rem 0;
     background: var(--color-neutral-soft);
     border-radius: var(--radius-md);

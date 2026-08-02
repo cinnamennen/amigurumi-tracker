@@ -458,7 +458,11 @@ const filtered = computed(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6rem;
+    /* Real product photos from the source catalog are square (1:1) --
+       matching that ratio here (instead of a fixed short height) means the
+       whole photo shows instead of cover-cropping off its left/right edges
+       to fit a wide letterbox box. */
+    aspect-ratio: 1 / 1;
     margin-bottom: 0.5rem;
     background: var(--color-neutral-soft);
     border-radius: var(--radius-sm);
@@ -472,7 +476,7 @@ const filtered = computed(() => {
   }
 
   .thumb-placeholder {
-    font-size: 1.75rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--color-accent);
   }
