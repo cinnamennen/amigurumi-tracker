@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-01T22:59:20.638Z",
+  "fetchedAt": "2026-08-02T01:30:08.498Z",
   "productCount": 799,
   "matches": {
     "tiny-angel-wings-accessories": {
@@ -18,6 +18,12 @@
       "productUrl": "https://thewoobles.com/products/tiny-aviator-hat-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99FLY-PC-PDP.jpg?v=1762455657",
       "matchedTitle": "Tiny Aviator Hat Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-backpack-safari-accessories": {
+      "productUrl": "https://thewoobles.com/products/tiny-backpack-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/TinyRedBackpackRetouched.jpg?v=1736956065",
+      "matchedTitle": "Tiny Backpack Accessory Kit",
       "confidence": "high"
     },
     "tiny-barista-apron-accessories": {
@@ -69,9 +75,9 @@
       "confidence": "high"
     },
     "tiny-book-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-book-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/products/book_1.jpg?v=1762451980",
-      "matchedTitle": "Tiny Book Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/every-trick-or-treat-in-the-book-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/88SPT-EveryTrickOrTreatInTheBook-Bundle-BS2-WEB_d9e1cdbe-8e7b-44b8-9046-832d3fa12dd1.jpg?v=1757013883",
+      "matchedTitle": "Every Trick-or-Treat in the Book Bundle",
       "confidence": "high"
     },
     "tiny-bowler-hat-accessories": {
@@ -90,6 +96,12 @@
       "productUrl": "https://thewoobles.com/products/tiny-briefcase-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/products/briefcase_1.jpg?v=1762451981",
       "matchedTitle": "Tiny Briefcase Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-broom-accessories": {
+      "productUrl": "https://thewoobles.com/products/broom-with-a-view-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/83EBB-ElphabaAndBroom-Bundle-GT2-WEB_1.jpg?v=1762366558",
+      "matchedTitle": "Broom with a View Bundle",
       "confidence": "high"
     },
     "tiny-bunny-headband-accessories": {
@@ -129,9 +141,9 @@
       "confidence": "high"
     },
     "tiny-candy-corn-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-candy-corn-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99CRN-TinyCandyCorn-FW-VT1-WEB.jpg?v=1719593783",
-      "matchedTitle": "Tiny Candy Corn Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/maisey-the-candy-corn-crochet-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/11CR-MaiseyTheCandyCorn-FW-RVT1-WEB.jpg?v=1757012062",
+      "matchedTitle": "Maisey the Candy Corn Crochet Kit",
       "confidence": "high"
     },
     "tiny-carrot-hat-accessories": {
@@ -273,9 +285,9 @@
       "confidence": "high"
     },
     "tiny-heart-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-pastel-heart-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99HRT-PST-PastelTinyHeart-FW-RCT3-RET_1.jpg?v=1706110664",
-      "matchedTitle": "Tiny Pastel Heart Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/lil-pizza-your-heart-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Lil_Pizza_Your_Heart_Bundle.jpg?v=1745898255",
+      "matchedTitle": "Lil' Pizza Your Heart Bundle",
       "confidence": "high"
     },
     "tiny-hockey-set-accessories": {
@@ -309,9 +321,9 @@
       "confidence": "high"
     },
     "tiny-pear-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-pear-accessory-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Retouched_Tiny_Pear_FW_RVP13.jpg?v=1730987810",
-      "matchedTitle": "Tiny Pear Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/wooble-in-a-pear-tree-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/WoobleInAPearTreeBundle.jpg?v=1730730026",
+      "matchedTitle": "Wooble in a Pear Tree Bundle",
       "confidence": "high"
     },
     "tiny-pickleball-set-accessories": {
@@ -333,9 +345,9 @@
       "confidence": "high"
     },
     "tiny-pizza-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-pizza-accessory-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Tiny_Pizza_Retouched.jpg?v=1747093280",
-      "matchedTitle": "Tiny Pizza Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/lil-pizza-your-heart-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Lil_Pizza_Your_Heart_Bundle.jpg?v=1745898255",
+      "matchedTitle": "Lil' Pizza Your Heart Bundle",
       "confidence": "high"
     },
     "tiny-plant-hanger-accessories": {
@@ -362,6 +374,12 @@
       "matchedTitle": "Tiny Pretzel Accessory Kit",
       "confidence": "high"
     },
+    "tiny-rainbow-accessories": {
+      "productUrl": "https://thewoobles.com/products/rainbow-dash-crochet-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/33DA-RainbowDash-FW-CT4-RET.jpg?v=1774975401",
+      "matchedTitle": "Rainbow Dash Crochet Kit",
+      "confidence": "high"
+    },
     "tiny-red-envelope-accessories": {
       "productUrl": "https://thewoobles.com/products/tiny-red-envelope",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99ENV-TinyRedEnvelope-FW-RWHue-WEB_a8484aa0-aa1c-4882-8460-3e60eb7974dd.jpg?v=1706709605",
@@ -381,15 +399,15 @@
       "confidence": "high"
     },
     "tiny-scarf-accessories": {
-      "productUrl": "https://thewoobles.com/products/ravenclawac-scarf-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93SCF-SLY-RavenclawScarf-PF-BC-T2-RET.jpg?v=1704301613",
-      "matchedTitle": "Tiny Ravenclaw™ Scarf Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/slytherinac-serpent-and-scarf-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/83SYG-Bundle-YGS2-RET_1.jpg?v=1704302184",
+      "matchedTitle": "Slytherin™ Serpent and Scarf Bundle",
       "confidence": "high"
     },
     "tiny-shovel-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-shovel-accessory-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Tiny_Shovel_Retouched.jpg?v=1750069280",
-      "matchedTitle": "Tiny Shovel Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/hecuba-s-shovel-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93SHL-HecubasShovel-FW-YGT1-WEB.jpg?v=1764190375",
+      "matchedTitle": "Hecuba's Shovel Accessory Kit",
       "confidence": "high"
     },
     "tiny-sleep-mask-accessories": {
@@ -409,6 +427,12 @@
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Tiny_Sprout_Retouched.jpg?v=1750069280",
       "matchedTitle": "Tiny Sprout Accessory Kit",
       "confidence": "high"
+    },
+    "tiny-st-patricks-day-hat-accessories": {
+      "productUrl": "https://thewoobles.com/products/st-patricks-day-hat-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/products/st_pat_listing.jpg?v=1762449825",
+      "matchedTitle": "Tiny St. Paddy's Day Hat Accessory Kit",
+      "confidence": "medium"
     },
     "tiny-straw-hat-accessories": {
       "productUrl": "https://thewoobles.com/products/tiny-straw-hat-accessory-kit",
@@ -446,16 +470,28 @@
       "matchedTitle": "Tiny Tent Accessory Kit",
       "confidence": "high"
     },
+    "tiny-tote-accessories": {
+      "productUrl": "https://thewoobles.com/products/fan-tote-stic-canvas-bag",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/FanToteStic_Canvas_Bag_Front.jpg?v=1724946544",
+      "matchedTitle": "Fan-tote-stic Canvas Bag",
+      "confidence": "high"
+    },
     "tiny-treasure-chest-accessories": {
-      "productUrl": "https://thewoobles.com/products/tiny-treasure-chest-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99TCH-PF-web_4a0d0544-f386-4c10-94e5-efd16c077cc2.jpg?v=1762456180",
-      "matchedTitle": "Tiny Treasure Chest Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/stick-s-treasure-chest-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93TRC-SticksTreasureChest-FW-YGP11-WEB.jpg?v=1760655174",
+      "matchedTitle": "Stick's Treasure Chest Accessory Kit",
       "confidence": "high"
     },
     "tiny-trophy-accessories": {
       "productUrl": "https://thewoobles.com/products/tiny-trophy",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99TRY-TinyTrophy-FW-CS1-WEB.jpg?v=1708357340",
       "matchedTitle": "Tiny Trophy Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-ufo-accessories": {
+      "productUrl": "https://thewoobles.com/products/ufo-my-heavens-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/88NPP-UFOMyHeavens-Bundle-BP12-WEB.jpg?v=1756318496",
+      "matchedTitle": "UFO My Heavens Bundle",
       "confidence": "high"
     },
     "tiny-vest-accessories": {
@@ -692,6 +728,12 @@
       "matchedTitle": "Lola Loca the Polar Bear Crochet Kit",
       "confidence": "high"
     },
+    "lola-loca-earth-day-animal": {
+      "productUrl": "https://thewoobles.com/products/polar-bear-crochet-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/products/polar_bear_1.jpg?v=1762452531",
+      "matchedTitle": "Lola Loca the Polar Bear Crochet Kit",
+      "confidence": "high"
+    },
     "lulu-animal": {
       "productUrl": "https://thewoobles.com/products/lulu-the-elephant-crochet-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/T22ELE-LuluTheElephant-FW-CT1-WEB.jpg?v=1771537245",
@@ -801,9 +843,9 @@
       "confidence": "high"
     },
     "tiny-manatee-animal": {
-      "productUrl": "https://thewoobles.com/products/tiny-manatee-accessory-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/X99MAN-TinyManatee-FW-BGT4-WEB.jpg?v=1764693664",
-      "matchedTitle": "Tiny Manatee Extra Squeezy Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/gift-to-hu-manatee-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/X88MNM-GiftToHuManatee-Bundle-BP12-WEB.jpg?v=1764015320",
+      "matchedTitle": "Gift to Hu-Manatee Bundle",
       "confidence": "high"
     },
     "tito-animal": {
@@ -1334,6 +1376,12 @@
       "matchedTitle": "Tiny Lump of Coal Accessory Kit",
       "confidence": "high"
     },
+    "tiny-magical-elf-christmas": {
+      "productUrl": "https://thewoobles.com/products/mini-magical-elf-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/MiniMagicalElfFWGT2.jpg?v=1728056349",
+      "matchedTitle": "Mini Magical Elf Accessory Kit",
+      "confidence": "high"
+    },
     "tiny-mittens-christmas": {
       "productUrl": "https://thewoobles.com/products/tiny-mittens-accessory-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/TinyMittensRetouched.jpg?v=1728051885",
@@ -1350,6 +1398,12 @@
       "productUrl": "https://thewoobles.com/products/tiny-yellow-present-accessory-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/Tiny_Yellow_Present_Retouched.jpg?v=1730988266",
       "matchedTitle": "Tiny Yellow Present Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-santa-hat-christmas": {
+      "productUrl": "https://thewoobles.com/products/veranda-santa-hat-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93BSH-VerandaSantaHat-FW-BP12-WEB.jpg?v=1764190375",
+      "matchedTitle": "Veranda Santa Hat Accessory Kit",
       "confidence": "high"
     },
     "tiny-santa-sack-christmas": {
@@ -1371,15 +1425,21 @@
       "confidence": "high"
     },
     "tiny-stocking-christmas": {
-      "productUrl": "https://thewoobles.com/products/tiny-stocking-accessory-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/TinyStockingFWGT3.jpg?v=1728056172",
-      "matchedTitle": "Tiny Stocking Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/the-stocking-stuff-of-legend-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/88XMA-TheStockingStuffOfLegend-Bundle-GT3-WEB.jpg?v=1759264043",
+      "matchedTitle": "The Stocking Stuff of Legend Bundle",
       "confidence": "high"
     },
     "tiny-wreath-christmas": {
       "productUrl": "https://thewoobles.com/products/tiny-wreath-accessory-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/TinyWreathFW.jpg?v=1728056476",
       "matchedTitle": "Tiny Wreath Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-yo-yo-christmas": {
+      "productUrl": "https://thewoobles.com/products/treat-yoself-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/products/treat_yoself.jpg?v=1762452506",
+      "matchedTitle": "Treat Yo'self Bundle",
       "confidence": "high"
     },
     "tori-christmas": {
@@ -1767,15 +1827,21 @@
       "confidence": "high"
     },
     "tiny-pumpkin-halloween": {
-      "productUrl": "https://thewoobles.com/products/tiny-pumpkin-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99KIN-TinyPumpkin-FW-YOT1-WEB.jpg?v=1719593783",
-      "matchedTitle": "Tiny Pumpkin Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/pumpkin-to-talk-about-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/88JLC_-_Pumpkin_to_Talk_About_Bundle.jpg?v=1757005613",
+      "matchedTitle": "Pumpkin to Talk About Bundle",
       "confidence": "high"
     },
     "tiny-scythe-halloween": {
       "productUrl": "https://thewoobles.com/products/tiny-scythe-accessory-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/99SCY-TinyScythe-FW-BP12-WEB.jpg?v=1758050065",
       "matchedTitle": "Tiny Scythe Accessory Kit",
+      "confidence": "high"
+    },
+    "tiny-spider-halloween": {
+      "productUrl": "https://thewoobles.com/products/nyx-the-spider-crochet-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/11SP-NyxTheSpider-FW-CS1-WEB.jpg?v=1758050010",
+      "matchedTitle": "Nyx the Spider Crochet Kit",
       "confidence": "high"
     },
     "tiny-spirit-board-halloween": {
@@ -2001,9 +2067,9 @@
       "confidence": "high"
     },
     "tiny-saddle-minecraft": {
-      "productUrl": "https://thewoobles.com/products/minecraft-saddle-kit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93SAD-MinecraftSaddle-FW-CT4-WEB.jpg?v=1716996568",
-      "matchedTitle": "Tiny Minecraft Saddle Accessory Kit",
+      "productUrl": "https://thewoobles.com/products/minecraft-pig-saddle-up-bundle",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/83PIS-PigSaddle-Bundle-GT2-WEB.jpg?v=1717005370",
+      "matchedTitle": "Minecraft Pig Saddle Up Bundle",
       "confidence": "high"
     },
     "warden-minecraft": {
@@ -2232,6 +2298,12 @@
       "productUrl": "https://thewoobles.com/products/tails-crochet-kit",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/33IL-Tails-FW-YOT2-RET.jpg?v=1781143674",
       "matchedTitle": "Tails Crochet Kit",
+      "confidence": "high"
+    },
+    "tiny-chaos-emerald-sonic": {
+      "productUrl": "https://thewoobles.com/products/chaos-emerald-accessory-kit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0400/0904/0038/files/93CEM-ChaosEmerald-GIF.gif?v=1781143673",
+      "matchedTitle": "Chaos Emerald Accessory Kit",
       "confidence": "high"
     },
     "gary-spongebob": {
@@ -2580,27 +2652,34 @@
     "thalia-blooms",
     "three-food",
     "tim-animal",
+    "tiny-bowtie-accessories",
+    "tiny-bread-accessories",
+    "tiny-bucket-and-shovel-accessories",
     "tiny-car-tire-accessories",
     "tiny-cell-phone-accessories",
     "tiny-clam-with-pearl-food",
+    "tiny-ear-flap-hat-accessories",
+    "tiny-fawkes-harry-potter",
+    "tiny-frodos-sting-lord-of-the-rings",
     "tiny-golden-dumpling-accessories",
+    "tiny-hedwig-harry-potter",
     "tiny-hobbit-stein-lord-of-the-rings",
+    "tiny-kettlebell-accessories",
+    "tiny-moon-halloween",
+    "tiny-mustache-accessories",
+    "tiny-pie-accessories",
     "tiny-sams-frying-pan-lord-of-the-rings",
-    "tiny-shire-firework-lord-of-the-rings",
-    "tiny-spinning-top-christmas",
+    "tiny-shoes-accessories",
+    "tiny-skull-halloween",
     "tiny-storm-cloud-accessories",
-    "tiny-teddy-bear-accessories",
+    "tiny-sun-accessories",
     "tiny-toilet-paper-halloween",
-    "tiny-toy-blocks-christmas",
-    "tiny-toy-boat-christmas",
-    "tiny-toy-car-christmas",
-    "tiny-tree-topper-christmas",
+    "tiny-tutu-accessories",
     "tiny-victorian-wig-accessories",
     "tiny-zafu-cushion-accessories",
     "toy-cat-bed-purr-mutation",
     "toy-catnip-mouse-purr-mutation",
     "toy-fishing-rod-purr-mutation",
-    "toy-tiny-puke-purr-mutation",
     "urkel-philibert-book",
     "val-miscellaneous",
     "wade-animal",
@@ -2611,622 +2690,235 @@
   "ambiguous": {
     "tiny-baby-bottle-accessories": [
       {
+        "title": "Baby Martian Accessory Kit",
+        "handle": "baby-martian-accessory-kit",
+        "score": 0.5
+      },
+      {
         "title": "Tiny Gudetama™ Soy Sauce Bottle Accessory Kit",
         "handle": "tiny-gudetama-soy-sauce-bottle-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Minecraft Baby Zombie Accessory Kit",
         "handle": "tiny-minecraft-baby-zombie-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Hello Kitty®'s Milk Bottle Accessory Kit",
         "handle": "hello-kitty-s-milk-bottle-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
-        "title": "Tiny Baby Bee Accessory Kit",
-        "handle": "tiny-baby-bee-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-backpack-safari-accessories": [
-      {
-        "title": "Tiny Safari Hat Accessory Kit",
-        "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Backpack Accessory Kit",
-        "handle": "tiny-backpack-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Baby Bella Accessory Kit",
+        "handle": "baby-bella-kit",
+        "score": 0.5
       }
     ],
     "tiny-baseball-cap-accessories": [
       {
         "title": "Tiny Swim Cap Set Accessory Kit",
         "handle": "tiny-swim-cap-set-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Baseball and Bat Accessory Kit",
         "handle": "tiny-baseball-and-bat-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
+      },
+      {
+        "title": "Cap-solute Classic Cap",
+        "handle": "cap-solute-classic-cap",
+        "score": 0.5
       },
       {
         "title": "Tiny Graduation Cap Accessory Kit",
         "handle": "tiny-graduation-cap-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-beach-ball-accessories": [
       {
         "title": "Tiny Beach Towel Accessory Kit",
         "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Crystal Ball Accessory Kit",
         "handle": "tiny-crystal-ball-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
+      },
+      {
+        "title": "Keep Your Eye on the Woo-ball Bundle",
+        "handle": "keep-your-eye-on-the-woo-ball-bundle",
+        "score": 0.5
       },
       {
         "title": "Tiny Soccer Ball Accessory Kit",
         "handle": "tiny-soccer-ball-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Dung Ball Accessory Kit",
         "handle": "tiny-dung-ball-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-bowtie-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
         "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-bread-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-broom-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-bucket-and-shovel-accessories": [
-      {
-        "title": "Tiny Shovel Accessory Kit",
-        "handle": "tiny-shovel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Baseball and Bat Accessory Kit",
-        "handle": "tiny-baseball-and-bat-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Carrot and Basket Accessory Kit",
-        "handle": "tiny-carrot-and-basket-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Here, There, and Every-Pierre Bundle",
-        "handle": "here-there-and-every-pierre-bundle",
-        "score": 0.25
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.25
       }
     ],
     "tiny-buckle-backpack-accessories": [
       {
         "title": "Tiny Backpack Accessory Kit",
         "handle": "tiny-backpack-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-chinese-knot-accessories": [
       {
         "title": "Tiny Miffy Chinese Lantern Accessory Kit",
         "handle": "tiny-chinese-lantern-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-cotton-candy-accessories": [
       {
+        "title": "Peppi the Candy Cane Crochet Kit",
+        "handle": "peppi-the-candy-cane-crochet-kit",
+        "score": 0.5
+      },
+      {
+        "title": "Cindy's Candy Cane Accessory Kit",
+        "handle": "cindy-s-candy-cane-accessory-kit",
+        "score": 0.5
+      },
+      {
+        "title": "Maisey the Candy Corn Crochet Kit",
+        "handle": "maisey-the-candy-corn-crochet-kit",
+        "score": 0.5
+      },
+      {
+        "title": "Valentines Day Candy Hearts",
+        "handle": "valentines-day-candy-hearts",
+        "score": 0.5
+      },
+      {
         "title": "Tiny Candy Corn Accessory Kit",
         "handle": "tiny-candy-corn-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-crown-king-accessories": [
       {
-        "title": "Tiny Queen Crown Accessory Kit",
-        "handle": "tiny-queen-crown-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Crown Accessory Kit",
-        "handle": "tiny-crown-kit",
-        "score": 0.6666666666666666
-      },
-      {
         "title": "Ice King of the Castle Bundle",
         "handle": "ice-king-of-the-castle-bundle",
-        "score": 0.3333333333333333
+        "score": 0.5
       },
       {
         "title": "Ice King Crochet Kit",
         "handle": "ice-king-crochet-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-ear-flap-hat-accessories": [
-      {
-        "title": "Tiny Safari Hat Accessory Kit",
-        "handle": "tiny-safari-hat-accessory-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
-        "handle": "tiny-straw-hat-accessory-kit",
+        "title": "Tiny Queen Crown Accessory Kit",
+        "handle": "tiny-queen-crown-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Gudetama™ Eggshell Hat Accessory Kit",
-        "handle": "tiny-gudetama-eggshell-hat-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Camping Hat Accessory Kit",
-        "handle": "tiny-camping-hat-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Nutcracker Hat Accessory Kit",
-        "handle": "tiny-nutcracker-hat-accessory-kit",
+        "title": "Tiny Crown Accessory Kit",
+        "handle": "tiny-crown-kit",
         "score": 0.5
       }
     ],
     "tiny-fried-egg-accessories": [
       {
+        "title": "Gudetama™ Egg on Rice Crochet Kit",
+        "handle": "gudetama-egg-on-rice-crochet-kit",
+        "score": 0.5
+      },
+      {
+        "title": "Egg-cellent Accessory Bundle",
+        "handle": "egg-cellent-accessory-bundle",
+        "score": 0.5
+      },
+      {
         "title": "Tiny Easter Egg Shell Accessory Kit",
         "handle": "tiny-easter-egg-shell-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Ultimate Easter Egg-stravaganza Bundle",
+        "handle": "ultimate-easter-egg-stravaganza-bundle",
+        "score": 0.5
       }
     ],
     "tiny-garbage-can-accessories": [
       {
-        "title": "Tiny Watering Can Accessory Kit",
-        "handle": "tiny-watering-can-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
         "title": "Uke Can Do It Bundle",
         "handle": "uke-can-do-it-bundle",
-        "score": 0.3333333333333333
+        "score": 0.5
       },
       {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Tiny Watering Can Accessory Kit",
+        "handle": "tiny-watering-can-accessory-kit",
+        "score": 0.5
       },
       {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Sweet As Can Be My Melody™ Bundle",
+        "handle": "sweet-as-can-be-my-melody-bundle",
+        "score": 0.5
       }
     ],
     "tiny-graduation-diploma-accessories": [
       {
         "title": "Tiny Rolled Diploma Accessory Kit",
         "handle": "tiny-rolled-diploma-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Graduation Gown Accessory Kit",
         "handle": "tiny-graduation-gown-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Graduation Cap Accessory Kit",
         "handle": "tiny-graduation-cap-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-kettlebell-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-mustache-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
         "score": 0.5
       }
     ],
     "tiny-nurses-hat-accessories": [
       {
+        "title": "The Grinch's Santa Hat Accessory Kit",
+        "handle": "the-grinch-s-santa-hat-accessory-kit",
+        "score": 0.6666666666666666
+      },
+      {
         "title": "Tiny St. Paddy's Day Hat Accessory Kit",
         "handle": "st-patricks-day-hat-kit",
-        "score": 0.75
+        "score": 0.6666666666666666
       },
       {
         "title": "Tiny Nurse Hat Accessory Kit",
         "handle": "tiny-nurse-hat-kit",
-        "score": 0.75
+        "score": 0.6666666666666666
+      },
+      {
+        "title": "Ooo It’s Adventure Time Bundle",
+        "handle": "ooo-it-s-adventure-time-bundle",
+        "score": 0.3333333333333333
       },
       {
         "title": "Tiny Safari Hat Accessory Kit",
         "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
-        "handle": "tiny-straw-hat-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Patrick's Tiny Jellyfish Accessory Kit",
-        "handle": "patrick-s-tiny-jellyfish-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-pie-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-rainbow-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Rainbow Dash Crochet Kit",
-        "handle": "rainbow-dash-crochet-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
+        "score": 0.3333333333333333
       }
     ],
     "tiny-sheet-mask-accessories": [
       {
         "title": "Tiny Halloween Mask Accessory Kit",
         "handle": "tiny-halloween-mask-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Sleep Mask Accessory Kit",
         "handle": "tiny-sleep-mask-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-shoes-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
         "score": 0.5
       }
     ],
@@ -3234,134 +2926,30 @@
       {
         "title": "Tiny Coffee Cup Accessory Kit",
         "handle": "tiny-coffee-cup-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-spa-headband-accessories": [
       {
+        "title": "Welcome to Spa-vana Bundle",
+        "handle": "welcome-to-spa-vana-bundle",
+        "score": 0.5
+      },
+      {
         "title": "Tiny Bunny Headband Accessory Kit",
         "handle": "tiny-bunny-headband-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-spa-towel-accessories": [
       {
         "title": "Tiny Beach Towel Accessory Kit",
         "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-st-patricks-day-hat-accessories": [
-      {
-        "title": "Tiny St. Paddy's Day Hat Accessory Kit",
-        "handle": "st-patricks-day-hat-kit",
-        "score": 0.8333333333333334
-      },
-      {
-        "title": "Patrick's Tiny Jellyfish Accessory Kit",
-        "handle": "patrick-s-tiny-jellyfish-accessory-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Safari Hat Accessory Kit",
-        "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
-        "handle": "tiny-straw-hat-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "The Grinch's Santa Hat Accessory Kit",
-        "handle": "the-grinch-s-santa-hat-accessory-kit",
-        "score": 0.3333333333333333
-      }
-    ],
-    "tiny-sun-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
+        "title": "Welcome to Spa-vana Bundle",
+        "handle": "welcome-to-spa-vana-bundle",
         "score": 0.5
       }
     ],
@@ -3369,107 +2957,43 @@
       {
         "title": "Tiny Safari Hat Accessory Kit",
         "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
         "handle": "tiny-straw-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
+      },
+      {
+        "title": "Veranda Santa Hat Accessory Kit",
+        "handle": "veranda-santa-hat-accessory-kit",
+        "score": 0.5
+      },
+      {
+        "title": "The Grinch's Santa Hat Accessory Kit",
+        "handle": "the-grinch-s-santa-hat-accessory-kit",
+        "score": 0.5
       },
       {
         "title": "Tiny Gudetama™ Eggshell Hat Accessory Kit",
         "handle": "tiny-gudetama-eggshell-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Camping Hat Accessory Kit",
-        "handle": "tiny-camping-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Nutcracker Hat Accessory Kit",
-        "handle": "tiny-nutcracker-hat-accessory-kit",
-        "score": 0.6666666666666666
-      }
-    ],
-    "tiny-tote-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
         "score": 0.5
       }
     ],
-    "tiny-tutu-accessories": [
+    "tiny-teddy-bear-accessories": [
       {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
+        "title": "Walter the Bear Pink Crochet Kit",
+        "handle": "walter-the-bear-pink-crochet-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
+        "title": "Lola Loca the Polar Bear Crochet Kit",
+        "handle": "polar-bear-crochet-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-ufo-accessories": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
+        "title": "Walter the Bear Crochet Kit",
+        "handle": "bear-crochet-kit",
         "score": 0.5
       }
     ],
@@ -3477,54 +3001,24 @@
       {
         "title": "Tiny Gudetama™ Soy Sauce Bottle Accessory Kit",
         "handle": "tiny-gudetama-soy-sauce-bottle-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Hello Kitty®'s Milk Bottle Accessory Kit",
         "handle": "hello-kitty-s-milk-bottle-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "tiny-whipped-cream-accessories": [
       {
         "title": "Tiny Whip Cream Accessory Kit",
         "handle": "tiny-whip-cream-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Ice Cream Accessory Kit",
         "handle": "tiny-ice-cream-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "score": 0.5
       }
     ],
     "ice-kings-castle-adventure-time": [
@@ -3551,33 +3045,6 @@
       {
         "title": "Squidward's Clarinet Accessory Kit",
         "handle": "squidward-s-clarinet-accessory-kit",
-        "score": 0.25
-      }
-    ],
-    "lola-loca-earth-day-animal": [
-      {
-        "title": "Lola Loca the Polar Bear Crochet Kit",
-        "handle": "polar-bear-crochet-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Mommy and Me Crochet All Day Bundle",
-        "handle": "mommy-me-crochet-all-day-bundle",
-        "score": 0.25
-      },
-      {
-        "title": "Tiny St. Paddy's Day Hat Accessory Kit",
-        "handle": "st-patricks-day-hat-kit",
-        "score": 0.25
-      },
-      {
-        "title": "Squeeze the Day Bundle",
-        "handle": "squeeze-the-day-bundle",
-        "score": 0.25
-      },
-      {
-        "title": "Valentines Day Candy Hearts",
-        "handle": "valentines-day-candy-hearts",
         "score": 0.25
       }
     ],
@@ -3849,112 +3316,66 @@
         "score": 0.5
       }
     ],
-    "tiny-magical-elf-christmas": [
+    "tiny-spinning-top-christmas": [
       {
-        "title": "Mini Magical Elf Accessory Kit",
-        "handle": "mini-magical-elf-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Elf Hat Accessory Kit",
-        "handle": "tiny-elf-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Carrot Top Bundle",
+        "handle": "carrot-top-bundle",
+        "score": 0.5
       }
     ],
-    "tiny-santa-hat-christmas": [
+    "tiny-toy-blocks-christmas": [
       {
-        "title": "Tiny Safari Hat Accessory Kit",
-        "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
+        "title": "Toy to the World Advent Calendar",
+        "handle": "toy-to-the-world-advent-calendar",
+        "score": 0.5
+      }
+    ],
+    "tiny-toy-boat-christmas": [
       {
-        "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
-        "handle": "tiny-straw-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Veranda Santa Hat Accessory Kit",
-        "handle": "veranda-santa-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "The Grinch's Santa Hat Accessory Kit",
-        "handle": "the-grinch-s-santa-hat-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Gudetama™ Eggshell Hat Accessory Kit",
-        "handle": "tiny-gudetama-eggshell-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "title": "Toy to the World Advent Calendar",
+        "handle": "toy-to-the-world-advent-calendar",
+        "score": 0.5
       }
     ],
     "tiny-toy-candy-christmas": [
       {
-        "title": "Tiny Candy Corn Accessory Kit",
-        "handle": "tiny-candy-corn-kit",
-        "score": 0.6666666666666666
+        "title": "Peppi the Candy Cane Crochet Kit",
+        "handle": "peppi-the-candy-cane-crochet-kit",
+        "score": 0.5
       },
       {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Cindy's Candy Cane Accessory Kit",
+        "handle": "cindy-s-candy-cane-accessory-kit",
+        "score": 0.5
       },
       {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Maisey the Candy Corn Crochet Kit",
+        "handle": "maisey-the-candy-corn-crochet-kit",
+        "score": 0.5
       },
       {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Toy to the World Advent Calendar",
+        "handle": "toy-to-the-world-advent-calendar",
+        "score": 0.5
       },
       {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Valentines Day Candy Hearts",
+        "handle": "valentines-day-candy-hearts",
+        "score": 0.5
       }
     ],
-    "tiny-yo-yo-christmas": [
+    "tiny-toy-car-christmas": [
       {
-        "title": "Treat Yo'self Bundle",
-        "handle": "treat-yoself-bundle",
-        "score": 0.6666666666666666
-      },
+        "title": "Toy to the World Advent Calendar",
+        "handle": "toy-to-the-world-advent-calendar",
+        "score": 0.5
+      }
+    ],
+    "tiny-tree-topper-christmas": [
       {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "Wooble in a Pear Tree Bundle",
+        "handle": "wooble-in-a-pear-tree-bundle",
+        "score": 0.5
       }
     ],
     "easy-peasy-lemon-squeesy-food": [
@@ -3979,112 +3400,31 @@
         "score": 0.25
       }
     ],
-    "tiny-moon-halloween": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-skull-halloween": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-spider-halloween": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
     "tiny-witch-hat-halloween": [
       {
         "title": "Tiny Safari Hat Accessory Kit",
         "handle": "tiny-safari-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Witch Cloak Accessory Kit",
         "handle": "tiny-witch-cloak",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
         "title": "Tiny Straw Hat Extra Squeezy Accessory Kit",
         "handle": "tiny-straw-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "score": 0.5
       },
       {
-        "title": "Tiny Gudetama™ Eggshell Hat Accessory Kit",
-        "handle": "tiny-gudetama-eggshell-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "title": "Veranda Santa Hat Accessory Kit",
+        "handle": "veranda-santa-hat-accessory-kit",
+        "score": 0.5
       },
       {
-        "title": "Tiny Camping Hat Accessory Kit",
-        "handle": "tiny-camping-hat-accessory-kit",
-        "score": 0.6666666666666666
+        "title": "The Grinch's Santa Hat Accessory Kit",
+        "handle": "the-grinch-s-santa-hat-accessory-kit",
+        "score": 0.5
       }
     ],
     "albus-dumbledore-harry-potter": [
@@ -4279,60 +3619,6 @@
         "score": 0.5
       }
     ],
-    "tiny-fawkes-harry-potter": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
-    "tiny-hedwig-harry-potter": [
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.5
-      },
-      {
-        "title": "Tiny Vest Accessory Kit",
-        "handle": "tiny-vest-accessory-kit",
-        "score": 0.5
-      }
-    ],
     "derpys-sussies-hat-kpdh": [
       {
         "title": "The Grinch's Santa Hat Accessory Kit",
@@ -4367,58 +3653,43 @@
         "score": 0.5
       }
     ],
-    "tiny-frodos-sting-lord-of-the-rings": [
+    "tiny-red-book-lord-of-the-rings": [
       {
-        "title": "Patrick's Tiny Jellyfish Accessory Kit",
-        "handle": "patrick-s-tiny-jellyfish-accessory-kit",
+        "title": "Soli the Red Panda Extra Squeezy Crochet Kit",
+        "handle": "soli-the-red-panda-crochet-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Minecraft Llama's Carpet Accessory Kit",
-        "handle": "tiny-minecraft-llamas-carpet-accessory-kit",
+        "title": "Paige the Red Panda: Cupcake Edition Crochet Kit",
+        "handle": "paige-the-red-panda-cupcake-edition-crochet-kit",
         "score": 0.5
       },
       {
-        "title": "Tiny Minecraft Dragon's Breath Accessory Kit",
-        "handle": "tiny-minecraft-dragons-breath-accessory-kit",
+        "title": "Every Trick-or-Treat in the Book Bundle",
+        "handle": "every-trick-or-treat-in-the-book-bundle",
         "score": 0.5
       },
       {
-        "title": "Tiny Gandalf's Staff Accessory Kit",
-        "handle": "tiny-gandalf-s-staff-accessory-kit",
+        "title": "Lady in Red Bundle",
+        "handle": "lady-in-red-bundle",
         "score": 0.5
       },
       {
-        "title": "Tiny Sting Accessory Kit",
-        "handle": "tiny-sting-accessory-kit",
+        "title": "Red Guard Crochet Kit",
+        "handle": "red-guard-crochet-kit",
         "score": 0.5
       }
     ],
-    "tiny-red-book-lord-of-the-rings": [
+    "tiny-shire-firework-lord-of-the-rings": [
       {
-        "title": "Tiny Red Present Accessory Kit",
-        "handle": "tiny-red-present-accessory-kit",
-        "score": 0.6666666666666666
+        "title": "Welcome to The Shire Bundle",
+        "handle": "welcome-to-the-shire-bundle",
+        "score": 0.5
       },
       {
-        "title": "Tiny Red Envelope Accessory Kit",
-        "handle": "tiny-red-envelope",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Book Accessory Kit",
-        "handle": "tiny-book-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
+        "title": "The Lord of the Rings Shire Collector’s Box",
+        "handle": "the-lord-of-the-rings-shire-collector-s-box",
+        "score": 0.5
       }
     ],
     "friendship-bracelet-miscellaneous": [
@@ -4543,6 +3814,13 @@
         "score": 0.3333333333333333
       }
     ],
+    "toy-tiny-puke-purr-mutation": [
+      {
+        "title": "Toy to the World Advent Calendar",
+        "handle": "toy-to-the-world-advent-calendar",
+        "score": 0.5
+      }
+    ],
     "unicorn-wig-purr-mutation": [
       {
         "title": "Billy the Unicorn Rainbow Crochet Kit",
@@ -4658,33 +3936,6 @@
         "title": "Mystery Donut III Crochet Kit",
         "handle": "mystery-donut-iii-crochet-kit",
         "score": 0.5
-      }
-    ],
-    "tiny-chaos-emerald-sonic": [
-      {
-        "title": "Chaos Emerald Accessory Kit",
-        "handle": "chaos-emerald-accessory-kit",
-        "score": 0.6666666666666666
-      },
-      {
-        "title": "Tiny Beach Towel Accessory Kit",
-        "handle": "tiny-beach-towel-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Coconut Drink Accessory Kit",
-        "handle": "tiny-coconut-drink-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Pool Floatie Accessory Kit",
-        "handle": "tiny-pool-floatie-accessory-kit",
-        "score": 0.3333333333333333
-      },
-      {
-        "title": "Tiny Binoculars Accessory Kit",
-        "handle": "tiny-binoculars-accessory-kit",
-        "score": 0.3333333333333333
       }
     ],
     "party-octopus-starter-sets": [
