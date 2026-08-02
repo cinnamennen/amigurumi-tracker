@@ -83,6 +83,10 @@ function usesColor(p: Pattern, family: string): boolean {
   return p.materials.some((m) => m.colorFamily === family);
 }
 
+function matchingColorCount(p: Pattern): number {
+  return activeColors.value.filter((family) => usesColor(p, family)).length;
+}
+
 function isHaveIt(p: Pattern): boolean {
   return userState.patternState(p.id).haveIt || p.haveIt;
 }
@@ -122,7 +126,7 @@ const filtered = computed(() => {
     if (completedOnly.value && !isCompleted(p)) return false;
     if (wantToMakeOnly.value && !isWantToMake(p)) return false;
     if (activeTags.value.length > 0 && !activeTags.value.every((tag) => p.collectionTags.includes(tag))) return false;
-    if (activeColors.value.length > 0 && !activeColors.value.every((family) => usesColor(p, family))) return false;
+    if (activeColors.value.length > 0 && !activeColors.value.some((family) => usesColor(p, family))) return false;
     return true;
   });
   const sorted = [...result];
@@ -130,6 +134,13 @@ const filtered = computed(() => {
     sorted.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
   } else {
     sorted.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  // Patterns matching more of the selected colors rank first -- an active
+  // color filter is a relevance signal, not just a yes/no gate, so someone
+  // picking Red+Blue+Green should see the pattern using all three above one
+  // that only happens to use Red.
+  if (activeColors.value.length > 0) {
+    sorted.sort((a, b) => matchingColorCount(b) - matchingColorCount(a));
   }
   return sorted;
 });
@@ -199,7 +210,7 @@ const filtered = computed(() => {
       </select>
     </div>
     <div class="field colors-field">
-      <span class="colors-label">Colors used (all must match)</span>
+      <span class="colors-label">Colors used (any match; more matches rank higher)</span>
       <div class="color-chips">
         <button
           v-for="family in colorFamilies"
