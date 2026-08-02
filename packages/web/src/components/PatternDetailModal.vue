@@ -82,6 +82,13 @@ onUnmounted(() => {
             <span v-if="m.qualifier" class="badge qualifier">{{ m.qualifier }}</span>
             <span v-if="m.isPlaceholder" class="badge placeholder">your choice</span>
             &mdash; {{ m.amountYds ?? "?" }}yds, {{ m.weight }}
+            <img
+              v-if="m.qualifier && pattern.imageUrl"
+              :src="pattern.imageUrl"
+              :alt="`${pattern.name} reference photo, to sanity-check the '${m.qualifier}' shade against`"
+              class="verify-photo"
+              title="Reference photo -- sanity-check this shade against the real thing"
+            />
           </li>
           <li v-if="pattern.materials.length === 0" class="empty">No material data extracted for this pattern.</li>
         </ul>
@@ -245,6 +252,14 @@ onUnmounted(() => {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  .verify-photo {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-accent);
   }
 
   .badge {
